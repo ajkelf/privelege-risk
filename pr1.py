@@ -7,3 +7,5 @@ objects = json.loads(data)
 
 for technique in objects:
   print(technique['commands'])
+  for command in technique['commands']:
+    print(command)
