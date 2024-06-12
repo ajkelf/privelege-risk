@@ -5,7 +5,7 @@ with open('techniques.json', 'r') as techniques_file:
 
 techniques_objects = json.loads(techniques_data)
 N = len(techniques_objects) #number of techniques
-print(f"Number of techniques: {N}")
+print(f"N = {N}, number of techniques to be used")
 
 i = 1
 for technique in techniques_objects:
