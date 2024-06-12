@@ -1,0 +1,1757 @@
+[
+    {
+        "id": "T1548.001",
+        "url": "https://attack.mitre.org/techniques/T1548/001",
+        "commands": [
+            {
+                "command": "chmod 4777"
+            },
+            {
+                "command": "chmod u+s"
+            },
+            {
+                "command": "chmod 2775"
+            },
+            {
+                "command": "chmod g+s"
+            },
+            {
+                "command": "ls -l"
+            },
+            {
+                "command": "ll"
+            },
+            {
+                "command": "find / -perm +4000"
+            },
+            {
+                "command": "find / -perm +2000"
+            }
+        ]
+    },
+    {
+        "id": "T1548.003",
+        "url": "https://attack.mitre.org/techniques/T1548/003",
+        "commands": [
+            {
+                "command":"/etc/sudoers"
+            },
+            {
+                "command": "/var/db/sudo"
+            },
+            {
+                "command": "ALL=(ALL) NOPASSWD: ALL"
+            },
+            {
+                "command": "/etc/sudoers"
+            }
+        ]
+    },
+    {
+        "id": "T1087.002",
+        "url": "https://attack.mitre.org/techniques/T1087/002",
+        "commands": [
+            {
+                "command": "net user /domain"
+            },
+            {
+                "command": "net group /domain"
+            },
+            {
+                "command": "ldapsearch"
+            }
+        ]
+    },
+    {
+        "id": "T1087.001",
+        "url": "https://attack.mitre.org/techniques/T1087/001",
+        "commands": [
+            {
+                "command": "net user"
+            },
+            {
+                "command": "net localgroup"
+            },
+            {
+                "command": "/etc/passwd"
+            }
+        ]
+    },
+    {
+        "id": "T1098.004",
+        "url": "https://attack.mitre.org/techniques/T1098/004",
+        "commands": [
+            {
+                "command": ".ssh/authorized_keys"
+            },
+            {
+                "command": "/etc/ssh/sshd_config"
+            },
+            {
+                "command": "ip ssh pubkey-chain"
+            }
+        ]
+    },
+    {
+        "id": "T1560.001",
+        "url": "https://attack.mitre.org/techniques/T1560/001",
+        "commands": [
+            {
+                "command": "tar"
+            },
+            {
+                "command": "7z"
+            },
+            {
+                "command": "rar"
+            },
+            {
+                "command": "zip -r"
+            },
+            {
+                "command": "gzip"
+            }
+        ]
+    },
+    {
+        "id": "T1119",
+        "url": "https://attack.mitre.org/techniques/T1119",
+        "commands": [
+            {
+                "command": "find"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": "/dev/"
+            },
+            {
+                "command": "empire"
+            },
+            {
+                "command": "nmap"
+            },
+            {
+                "command": "rar"
+            },
+            {
+                "command": "/proc/"
+            }
+        ]
+    },
+    {
+        "id": "T1020",
+        "url": "https://attack.mitre.org/techniques/T1020",
+        "commands": [
+            {
+                "command": "ftp"
+            },
+            {
+                "command": "sftp"
+            },
+            {
+                "command": "http"
+            },
+            {
+                "command": "dropbox.com"
+            },
+            {
+                "command": "disk.yandex.ru"
+            },
+            {
+                "command": "cloud.mail.ru"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1547.006",
+        "url": "https://attack.mitre.org/techniques/T1547/006",
+        "commands": [
+            {
+                "command": "modprobe"
+            },
+            {
+                "command": "insmod"
+            },
+            {
+                "command": "lsmod"
+            },
+            {
+                "command": "rmmod"
+            },
+            {
+                "command": "modinfo"
+            },
+            {
+                "command": ",ko"
+            },
+            {
+                "command": "uname -a"
+            },
+            {
+                "command": "uname -r"
+            },
+            {
+                "command": "/lib/modules"
+            }
+        ]
+    },
+    {
+        "id": "T1037.004",
+        "url": "https://attack.mitre.org/techniques/T1037/004",
+        "commands": [
+            {
+                "command": "rc.local"
+            },
+            {
+                "command": "rc.common"
+            },
+            {
+                "command": "/etc/rc.local"
+            },
+            {
+                "command": "/etc/rc.common"
+            },
+            {
+                "command": "/etc/rc"
+            }
+        ]
+    },
+    {
+        "id": "T1110",
+        "url": "https://attack.mitre.org/techniques/T1110",
+        "commands": [
+            {
+                "command": "ssh"
+            },
+            {
+                "command": "scp"
+            }
+        ]
+    },
+    {
+        "id": "T1115",
+        "url": "https://attack.mitre.org/techniques/T1115",
+        "commands": [
+            {
+                "command": "pbpaste"
+            }
+        ]
+    },
+    {
+        "id": "T1059.006",
+        "url": "https://attack.mitre.org/techniques/T1059/006",
+        "commands": [
+            {
+                "command": "python"
+            },
+            {
+                "command": ".py"
+            },
+            {
+                "command": "pysoxy"
+            }
+        ]
+    },
+    {
+        "id": "T1059.004",
+        "url": "https://attack.mitre.org/techniques/T1059/004",
+        "commands": [
+            {
+                "command": "sh"
+            },
+            {
+                "command": "bash"
+            },
+            {
+                "command": "zsh"
+            },
+            {
+                "command": "/bin/pwd"
+            },
+            {
+                "command": "/bin/sh"
+            },
+            {
+                "command": "/bin/bash"
+            },
+            {
+                "command": "nc"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1136.001",
+        "url": "https://attack.mitre.org/techniques/T1136/001",
+        "commands": [
+            {
+                "command": "useradd"
+            },
+            {
+                "command": "adduser"
+            },
+            {
+                "command": "/etc/passwd"
+            },
+            {
+                "command": "/etc/shadow"
+            },
+            {
+                "command": "/etc/group"
+            },
+            {
+                "command": "/etc/gshadow"
+            },
+            {
+                "command": "passwd"
+            },
+            {
+                "command": "groupadd"
+            },
+            {
+                "command": "usermod"
+            }
+        ]
+    },
+    {
+        "id": "T1543.002",
+        "url": "https://attack.mitre.org/techniques/T1543/002",
+        "commands": [
+            {
+                "command": ".service"
+            },
+            {
+                "command": "/systemd/system"
+            },
+            {
+                "command": "/lib/systemd/system/"
+            },
+            {
+                "command": "systemctl"
+            },
+            {
+                "command": "service"
+            },
+            {
+                "command": "/usr/sbin/service"
+            },
+            {
+                "command": "/etc/systemd/system"
+            },
+            {
+                "command": "/usr/lib/systemd/system/"
+            }
+        ]
+    },
+    {
+        "id": "T1555.002",
+        "url": "https://attack.mitre.org/techniques/T1555/002",
+        "commands": [
+            {
+                "command": "securityd"
+            }
+        ]
+    },
+    {
+        "id": "T1485",
+        "url": "https://attack.mitre.org/techniques/T1485",
+        "commands": [
+            {
+                "command": "rm"
+            },
+            {
+                "command": "rm -f"
+            },
+            {
+                "command": "rm -rf"
+            },
+            {
+                "command": "rm -r"
+            },
+            {
+                "command": "chmod"
+            },
+            {
+                "command": "chown"
+            },
+            {
+                "command": ">>"
+            },
+            {
+                "command": "0xcc"
+            },
+            {
+                "command": "/usr/bin/"
+            },
+            {
+                "command": "/usr/sbin/"
+            }
+        ]
+    },
+    {
+        "id": "T1074.001",
+        "url": "https://attack.mitre.org/techniques/T1074/001",
+        "commands": [
+            {
+                "command": "/tmp"
+            },
+            {
+                "command": "./LOGS"
+            },
+            {
+                "command": "/tmp/1"
+            },
+            {
+                "command": "/home/perl/PAUS.pm"
+            },
+            {
+                "command": "whoami"
+            },
+            {
+                "command": "rad<5-hex-chars>.tmp"
+            },
+            {
+                "command": "stari.txt"
+            }
+        ]
+    },
+    {
+        "id": "T1074.002",
+        "url": "https://attack.mitre.org/techniques/T1074/002",
+        "commands": [
+            {
+                "command": "/owa/"
+            },
+            {
+                "command": "ncftpput"
+            },
+            {
+                "command": "ftp://"
+            },
+            {
+                "command": "http://"
+            },
+            {
+                "command": "https://"
+            },
+            {
+                "command": "scp"
+            },
+            {
+                "command": "curl"
+            },
+            {
+                "command": "curl -F"
+            },
+            {
+                "command": "curl -X POST"
+            }
+        ]
+    },
+    {
+        "id": "T1005",
+        "url": "https://attack.mitre.org/techniques/T1005",
+        "commands": [
+            {
+                "command": "find"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": ".pdf"
+            },
+            {
+                "command": ".doc"
+            },
+            {
+                "command": ".docx"
+            },
+            {
+                "command": ".jpg"
+            }
+        ]
+    },
+    {
+        "id": "T1039",
+        "url": "https://attack.mitre.org/techniques/T1039",
+        "commands": [
+            {
+                "command": "mkdir"
+            },
+            {
+                "command": "smbclient"
+            },
+            {
+                "command": "mount"
+            },
+            {
+                "command": "smb://"
+            },
+            {
+                "command": "sftp://"
+            },
+            {
+                "command": "kioclient"
+            },
+            {
+                "command": "find"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": ".pdf"
+            },
+            {
+                "command": ".doc"
+            },
+            {
+                "command": ".docx"
+            },
+            {
+                "command": ".jpg"
+            }
+        ]
+    },
+    {
+        "id": "T1025",
+        "url": "https://attack.mitre.org/techniques/T1025",
+        "commands": [
+            {
+                "command": "/dev/"
+            },
+            {
+                "command": "mount"
+            },
+            {
+                "command": "mkdir"
+            }
+        ]
+    },
+    {
+        "id": "T1652",
+        "url": "https://attack.mitre.org/techniques/T1652",
+        "commands": [
+            {
+                "command": "/dev"
+            },
+            {
+                "command": "lsmod"
+            },
+            {
+                "command": "modinfo"
+            },
+            {
+                "command": "lsblk"
+            }
+        ]
+    },
+    {
+        "id": "T1561.001",
+        "url": "https://attack.mitre.org/techniques/T1561/001",
+        "commands": [
+            {
+                "command": "dd"
+            },
+            {
+                "command": "killdisk"
+            },
+            {
+                "command": "shred"
+            },
+            {
+                "command": "nvme sanitize"
+            }
+        ]
+    },
+    {
+        "id": "T1561.002",
+        "url": "https://attack.mitre.org/techniques/T1561/002",
+        "commands": [
+            {
+                "command": "fdisk"
+            },
+            {
+                "command": "format"
+            },
+            {
+                "command": "scrub"
+            },
+            {
+                "command": "wipe"
+            }
+        ]
+    },
+    {
+        "id": "T1546.016",
+        "url": "https://attack.mitre.org/techniques/T1546/016",
+        "commands": [
+            {
+                "command": "apt-get install"
+            },
+            {
+                "command": "yum install"
+            },
+            {
+                "command": "apt install"
+            },
+            {
+                "command": "dpkg -i"
+            }
+        ]
+    },
+    {
+        "id": "T1546.005",
+        "url": "https://attack.mitre.org/techniques/T1546/005",
+        "commands": [
+            {
+                "command": "trap"
+            }
+        ]
+    },
+    {
+        "id": "T1546.004",
+        "url": "https://attack.mitre.org/techniques/T1546/004",
+        "commands": [
+            {
+                "command": "/etc/profile"
+            },
+            {
+                "command": "/etc/profile.d"
+            },
+            {
+                "command": ".bash_profile"
+            },
+            {
+                "command": ".bash_login"
+            },
+            {
+                "command": ".profile"
+            },
+            {
+                "command": ".bashrc"
+            },
+            {
+                "command": ".bash_logout"
+            }
+        ]
+    },
+    {
+        "id": "T1048.002",
+        "url": "https://attack.mitre.org/techniques/T1048/002",
+        "commands": [
+            {
+                "command": "sftp"
+            },
+            {
+                "command": "https"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1048.001",
+        "url": "https://attack.mitre.org/techniques/T1048/001",
+        "commands": [
+            {
+                "command": "ftp"
+            },
+            {
+                "command": "http"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1048.003",
+        "url": "https://attack.mitre.org/techniques/T1048/003",
+        "commands": [
+            {
+                "command": "ftp"
+            },
+            {
+                "command": "dns"
+            },
+            {
+                "command": "http"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1041",
+        "url": "https://attack.mitre.org/techniques/T1041",
+        "commands": [
+            {
+                "command": "scp"
+            },
+            {
+                "command": "ftp"
+            },
+            {
+                "command": "sftp"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1052.001",
+        "url": "https://attack.mitre.org/techniques/T1052/001",
+        "commands": [
+            {
+                "command": "/dev"
+            },
+            {
+                "command": "mount"
+            },
+            {
+                "command": "cp"
+            },
+            {
+                "command": "mv"
+            }
+        ]
+    },
+    {
+        "id": "T1567.004",
+        "url": "https://attack.mitre.org/techniques/T1567/004",
+        "commands": [
+            {
+                "command": "gh webhook forward"
+            },
+            {
+                "command": "webhook.site"
+            }
+        ]
+    },
+    {
+        "id": "T1567.002",
+        "url": "https://attack.mitre.org/techniques/T1567/002",
+        "commands": [
+            {
+                "command": "dropbox.com"
+            },
+            {
+                "command": "disk.yandex.ru"
+            },
+            {
+                "command": "cloud.mail.ru"
+            },
+            {
+                "command": "curl"
+            }
+        ]
+    },
+    {
+        "id": "T1567.001",
+        "url": "https://attack.mitre.org/techniques/T1567/001",
+        "commands": [
+            {
+                "command": "git"
+            },
+            {
+                "command": "api.github.com"
+            },
+            {
+                "command": "gitlab"
+            },
+            {
+                "command": "repo"
+            }
+        ]
+    },
+    {
+        "id": "T1083",
+        "url": "https://attack.mitre.org/techniques/T1083",
+        "commands": [
+            {
+                "command": "ls"
+            },
+            {
+                "command": "find"
+            },
+            {
+                "command": "locate"
+            },
+            {
+                "command": "ll"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": "statvfs"
+            },
+            {
+                "command": "dir"
+            },
+            {
+                "command": "dirname"
+            },
+            {
+                "command": "cd"
+            }
+        ]
+    },
+    {
+        "id": "T1222.002",
+        "url": "https://attack.mitre.org/techniques/T1222/002",
+        "commands": [
+            {
+                "command": "chown"
+            },
+            {
+                "command": "chmod"
+            },
+            {
+                "command": "chattr"
+            }
+        ]
+    },
+    {
+        "id": "T1564.001",
+        "url": "https://attack.mitre.org/techniques/T1564/001",
+        "commands": [
+            {
+                "command": "ls -a"
+            },
+            {
+                "command": "chattr"
+            },
+            {
+                "command": "mv"
+            }
+        ]
+    },
+    {
+        "id": "T1564.011",
+        "url": "https://attack.mitre.org/techniques/T1564/011",
+        "commands": [
+            {
+                "command": "nohup"
+            }
+        ]
+    },
+    {
+        "id": "T1564.006",
+        "url": "https://attack.mitre.org/techniques/T1564/006",
+        "commands": [
+            {
+                "command": "qemu-img"
+            },
+            {
+                "command": "qemu-system-"
+            },
+            {
+                "command": "qemu-kvm"
+            }
+        ]
+    },
+    {
+        "id": "T1574.006",
+        "url": "https://attack.mitre.org/techniques/T1574/006",
+        "commands": [
+            {
+                "command": "/etc/ld.so.preload"
+            },
+            {
+                "command": "/lib/preload.so"
+            }
+        ]
+    },
+    {
+        "id": "T1562.012",
+        "url": "https://attack.mitre.org/techniques/T1562/012",
+        "commands": [
+            {
+                "command": "/etc/audit/audit.rules"
+            },
+            {
+                "command": "auditctl"
+            },
+            {
+                "command": "audit.conf"
+            }
+        ]
+    },
+    {
+        "id": "T1562.004",
+        "url": "https://attack.mitre.org/techniques/T1562/004",
+        "commands": [
+            {
+                "command": "ufw allow"
+            },
+            {
+                "command": "ufw disable"
+            },
+            {
+                "command": "service iptables disable"
+            },
+            {
+                "command": "iptables -A"
+            },
+            {
+                "command": "iptables-save"
+            },
+            {
+                "command": "nft add"
+            },
+            {
+                "command": "nft delete"
+            },
+            {
+                "command": "nft insert"
+            },
+            {
+                "command": "nft delete"
+            },
+            {
+                "command": "nft flush"
+            },
+            {
+                "command": "systemctl disable nftables"
+            }
+        ]
+    },
+    {
+        "id": "T1562.001",
+        "url": "https://attack.mitre.org/techniques/T1562/001",
+        "commands": [
+            {
+                "command": "setenforce 0"
+            },
+            {
+                "command": "pkill cfprefsd"
+            }
+        ]
+    },
+    {
+        "id": "T1562.010",
+        "url": "https://attack.mitre.org/techniques/T1562/010",
+        "commands": [
+            {
+                "command": "apt-get remove"
+            },
+            {
+                "command": "apt-cache showpkg"
+            },
+            {
+                "command": "apt-mark hold"
+            },
+            {
+                "command": "aptitude"
+            },
+            {
+                "command": "apt-get -t"
+            }
+        ]
+    },
+    {
+        "id": "T1562.003",
+        "url": "https://attack.mitre.org/techniques/T1562/003",
+        "commands": [
+            {
+                "command": ".bash_history"
+            },
+            {
+                "command": "unset HISTFILE"
+            },
+            {
+                "command": "export HISTFILESIZE=0"
+            }
+        ]
+    },
+    {
+        "id": "T1070.003",
+        "url": "https://attack.mitre.org/techniques/T1070/003",
+        "commands": [
+            {
+                "command": "rm ~/.bash_history"
+            },
+            {
+                "command": "history -c"
+            }
+        ]
+    },
+    {
+        "id": "T1070.002",
+        "url": "https://attack.mitre.org/techniques/T1070/002",
+        "commands": [
+            {
+                "command": "/var/log/"
+            },
+            {
+                "command": ">/var/log/"
+            },
+            {
+                "command": "rm /var/log/"
+            }
+        ]
+    },
+    {
+        "id": "T1070.007",
+        "url": "https://attack.mitre.org/techniques/T1070/007",
+        "commands": [
+            {
+                "command": "/var/log/"
+            },
+            {
+                "command": ">/var/log/"
+            },
+            {
+                "command": "rm /var/log/"
+            }
+        ]
+    },
+    {
+        "id": "T1070.009",
+        "url": "https://attack.mitre.org/techniques/T1070/009",
+        "commands": [
+            {
+                "command": "userdel"
+            },
+            {
+                "command": "rm -f /home/"
+            }
+        ]
+    },
+    {
+        "id": "T1070.004",
+        "url": "https://attack.mitre.org/techniques/T1070/004",
+        "commands": [
+            {
+                "command": "rm"
+            },
+            {
+                "command": "unlink"
+            }
+        ]
+    },
+    {
+        "id": "T1105",
+        "url": "https://attack.mitre.org/techniques/T1105",
+        "commands": [
+            {
+                "command": "curl"
+            },
+            {
+                "command": "scp"
+            },
+            {
+                "command": "sftp"
+            },
+            {
+                "command": "tftp"
+            },
+            {
+                "command": "rsync"
+            },
+            {
+                "command": "finger"
+            },
+            {
+                "command": "wget"
+            },
+            {
+                "command": "certutil"
+            }
+        ]
+    },
+    {
+        "id": "T1570",
+        "url": "https://attack.mitre.org/techniques/T1570",
+        "commands": [
+            {
+                "command": "scp"
+            },
+            {
+                "command": "rsync"
+            },
+            {
+                "command": "curl"
+            },
+            {
+                "command": "sftp"
+            },
+            {
+                "command": "ftp"
+            }
+        ]
+    },
+    {
+        "id": "T1654",
+        "url": "https://attack.mitre.org/techniques/T1654",
+        "commands": [
+            {
+                "command": "/var/log/"
+            }
+        ]
+    },
+    {
+        "id": "T1036.008",
+        "url": "https://attack.mitre.org/techniques/T1036/008",
+        "commands": [
+            {
+                "command": ".txt"
+            },
+            {
+                "command": ".jpg"
+            }
+        ]
+    },
+    {
+        "id": "T1036.003",
+        "url": "https://attack.mitre.org/techniques/T1036/003",
+        "commands": [
+            {
+                "command": "mv /usr/bin/"
+            },
+            {
+                "command": "mv /sbin/"
+            }
+        ]
+    },
+    {
+        "id": "T1046",
+        "url": "https://attack.mitre.org/techniques/T1046",
+        "commands": [
+            {
+                "command": "nmap"
+            },
+            {
+                "command": "telnet"
+            },
+            {
+                "command": "ping"
+            }
+        ]
+    },
+    {
+        "id": "T1135",
+        "url": "https://attack.mitre.org/techniques/T1135",
+        "commands": [
+            {
+                "command": "smbclient"
+            },
+            {
+                "command": "smbtree"
+            }
+        ]
+    },
+    {
+        "id": "T1040",
+        "url": "https://attack.mitre.org/techniques/T1040",
+        "commands": [
+            {
+                "command": "tcpdump"
+            },
+            {
+                "command": "tshark"
+            }
+        ]
+    },
+    {
+        "id": "T1003.008",
+        "url": "https://attack.mitre.org/techniques/T1003/008",
+        "commands": [
+            {
+                "command": "/etc/passwd"
+            },
+            {
+                "command": "/etc/shadow"
+            },
+            {
+                "command": "unshadow"
+            }
+        ]
+    },
+    {
+        "id": "T1003.005",
+        "url": "https://attack.mitre.org/techniques/T1003/005",
+        "commands": [
+            {
+                "command": "linikatz"
+            },
+            {
+                "command": "/var/lib/sss/db/cache"
+            }
+        ]
+    },
+    {
+        "id": "T1003.007",
+        "url": "https://attack.mitre.org/techniques/T1003/007",
+        "commands": [
+            {
+                "command": "/proc"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": "/maps"
+            },
+            {
+                "command": "/mem"
+            }
+        ]
+    },
+    {
+        "id": "T1027.010",
+        "url": "https://attack.mitre.org/techniques/T1027/010",
+        "commands": [
+            {
+                "command": "^"
+            },
+            {
+                "command": ".."
+            },
+            {
+                "command": "+"
+            },
+            {
+                "command": "$"
+            }
+        ]
+    },
+    {
+        "id": "T1201",
+        "url": "https://attack.mitre.org/techniques/T1201",
+        "commands": [
+            {
+                "command": "cat /etc/pam.d/common-password"
+            },
+            {
+                "command": "chage -l"
+            }
+        ]
+    },
+    {
+        "id": "T1120",
+        "url": "https://attack.mitre.org/techniques/T1120",
+        "commands": [
+            {
+                "command": "lslbk"
+            },
+            {
+                "command": "lspci"
+            },
+            {
+                "command": "/dev"
+            }
+        ]
+    },
+    {
+        "id": "T1069.002",
+        "url": "https://attack.mitre.org/techniques/T1069/002",
+        "commands": [
+            {
+                "command": "ldapsearch"
+            }
+        ]
+    },
+    {
+        "id": "T1069.001",
+        "url": "https://attack.mitre.org/techniques/T1069/001",
+        "commands": [
+            {
+                "command": "groups"
+            },
+            {
+                "command": "/etc/passwd"
+            },
+            {
+                "command": "/etc/group"
+            }
+        ]
+    },
+    {
+        "id": "T1653",
+        "url": "https://attack.mitre.org/techniques/T1653",
+        "commands": [
+            {
+                "command": "shutdown"
+            },
+            {
+                "command": "reboot"
+            },
+            {
+                "command": "powertop"
+            },
+            {
+                "command": "powerstat"
+            },
+            {
+                "command": "diskdevstat"
+            },
+            {
+                "command": "netdevstat"
+            },
+            {
+                "command": "bltk"
+            },
+            {
+                "command": "powertop2tuned"
+            },
+            {
+                "command": "upower"
+            }
+        ]
+    },
+    {
+        "id": "T1057",
+        "url": "https://attack.mitre.org/techniques/T1057",
+        "commands": [
+            {
+                "command": "ps"
+            },
+            {
+                "command": "/proc"
+            },
+            {
+                "command": "top"
+            }
+        ]
+    },
+    {
+        "id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021",
+        "commands": [
+            {
+                "command": "ssh"
+            },
+            {
+                "command": "telnet"
+            },
+            {
+                "command": "scp"
+            }
+        ]
+    },
+    {
+        "id": "T1018",
+        "url": "https://attack.mitre.org/techniques/T1018",
+        "commands": [
+            {
+                "command": "/etc/hosts"
+            },
+            {
+                "command": "show arp"
+            },
+            {
+                "command": "ping"
+            },
+            {
+                "command": "nmap"
+            },
+            {
+                "command": "dig"
+            },
+            {
+                "command": "/etc/resolv.conf"
+            }
+        ]
+    },
+    {
+        "id": "T1053.002",
+        "url": "https://attack.mitre.org/techniques/T1053/002",
+        "commands": [
+            {
+                "command": "at"
+            },
+            {
+                "command": "batch"
+            },
+            {
+                "command": "atq"
+            },
+            {
+                "command": "/var/spool/cron/atjobs/"
+            }
+        ]
+    },
+    {
+        "id": "T1053.003",
+        "url": "https://attack.mitre.org/techniques/T1053/003",
+        "commands": [
+            {
+                "command": "crontab"
+            },
+            {
+                "command": "cron"
+            },
+            {
+                "command": "/etc/rsyslog.conf"
+            },
+            {
+                "command": "/etc/syslog.conf"
+            },
+            {
+                "command": "/etc/cron.allow"
+            },
+            {
+                "command": "/etc/cron.deny"
+            }
+        ]
+    },
+    {
+        "id": "T1053.006",
+        "url": "https://attack.mitre.org/techniques/T1053/006",
+        "commands": [
+            {
+                "command": "/etc/systemd/system/"
+            },
+            {
+                "command": "/usr/lib/systemd/system"
+            },
+            {
+                "command": ".timer"
+            },
+            {
+                "command": ".config/systemd/user/"
+            }
+        ]
+    },
+    {
+        "id": "T1489",
+        "url": "https://attack.mitre.org/techniques/T1489",
+        "commands": [
+            {
+                "command": "systemctl"
+            },
+            {
+                "command": "service stop"
+            },
+            {
+                "command": "pkill"
+            },
+            {
+                "command": "kill"
+            }
+        ]
+    },
+    {
+        "id": "T1518.001",
+        "url": "https://attack.mitre.org/techniques/T1518/001",
+        "commands": [
+            {
+                "command": "/usr/sbin/setenforce"
+            }
+        ]
+    },
+    {
+        "id": "T1558",
+        "url": "https://attack.mitre.org/techniques/T1558",
+        "commands": [
+            {
+                "command": "/var/lib/sss/secrets/"
+            },
+            {
+                "command": "secrets.ldb"
+            },
+            {
+                "command": ".secrets.mkey"
+            },
+            {
+                "command": "/etc/krb5.conf"
+            }
+        ]
+    },
+    {
+        "id": "T1553.004",
+        "url": "https://attack.mitre.org/techniques/T1553/004",
+        "commands": [
+            {
+                "command": "/usr/bin/security"
+            },
+            {
+                "command": "update-ca-certificates"
+            },
+            {
+                "command": "openssl"
+            },
+            {
+                "command": "/etc/ssl/certs/ca-certificates.crt"
+            },
+            {
+                "command": "/etc/ssl/certs"
+            }
+        ]
+    },
+    {
+        "id": "T1082",
+        "url": "https://attack.mitre.org/techniques/T1082",
+        "commands": [
+            {
+                "command": "df"
+            },
+            {
+                "command": "uname"
+            },
+            {
+                "command": "ip"
+            },
+            {
+                "command": "lsblk"
+            },
+            {
+                "command": "lspci"
+            },
+            {
+                "command": "ping"
+            },
+            {
+                "command": "ls"
+            },
+            {
+                "command": "/etc"
+            },
+            {
+                "command": "hostname"
+            },
+            {
+                "command": "hostnamectl"
+            },
+            {
+                "command": "/proc"
+            }
+        ]
+    },
+    {
+        "id": "T1614.001",
+        "url": "https://attack.mitre.org/techniques/T1614/001",
+        "commands": [
+            {
+                "command": "locale"
+            },
+            {
+                "command": "$LANG"
+            }
+        ]
+    },
+    {
+        "id": "T1016.001",
+        "url": "https://attack.mitre.org/techniques/T1016/001",
+        "commands": [
+            {
+                "command": "tracert"
+            },
+            {
+                "command": "ip"
+            },
+            {
+                "command": "ping"
+            },
+            {
+                "command": "curl"
+            },
+            {
+                "command": "wget"
+            }
+        ]
+    },
+    {
+        "id": "T1016.002",
+        "url": "https://attack.mitre.org/techniques/T1016/002",
+        "commands": [
+            {
+                "command": "/etc/network/interfaces"
+            },
+            {
+                "command": "ip"
+            },
+            {
+                "command": "iwconfig"
+            },
+            {
+                "command": "dhclient"
+            },
+            {
+                "command": "ifconfig"
+            },
+            {
+                "command": "iwlist"
+            },
+            {
+                "command": "ifup"
+            },
+            {
+                "command": "ifdown"
+            }
+        ]
+    },
+    {
+        "id": "T1049",
+        "url": "https://attack.mitre.org/techniques/T1049",
+        "commands": [
+            {
+                "command": "netstat"
+            },
+            {
+                "command": "lsof"
+            },
+            {
+                "command": "who"
+            },
+            {
+                "command": "arp"
+            }
+        ]
+    },
+    {
+        "id": "T1033",
+        "url": "https://attack.mitre.org/techniques/T1033",
+        "commands": [
+            {
+                "command": "whoami"
+            },
+            {
+                "command": "who"
+            },
+            {
+                "command": "/etc/passwd"
+            },
+            {
+                "command": "/etc/group"
+            },
+            {
+                "command": "/home"
+            }
+        ]
+    },
+    {
+        "id": "T1007",
+        "url": "https://attack.mitre.org/techniques/T1007",
+        "commands": [
+            {
+                "command": "systemctl"
+            },
+            {
+                "command": "top"
+            },
+            {
+                "command": "ps"
+            }
+        ]
+    },
+    {
+        "id": "T1529",
+        "url": "https://attack.mitre.org/techniques/T1529",
+        "commands": [
+            {
+                "command": "shutdown"
+            },
+            {
+                "command": "reboot"
+            },
+            {
+                "command": "halt"
+            },
+            {
+                "command": "poweroff"
+            },
+            {
+                "command": "init 0"
+            }
+        ]
+    },
+    {
+        "id": "T1124",
+        "url": "https://attack.mitre.org/techniques/T1124",
+        "commands": [
+            {
+                "command": "time"
+            },
+            {
+                "command": "timedatectl"
+            },
+            {
+                "command": "date"
+            }
+        ]
+    },
+    {
+        "id": "T1552.003",
+        "url": "https://attack.mitre.org/techniques/T1552/003",
+        "commands": [
+            {
+                "command": ".bash_history"
+            }
+        ]
+    },
+    {
+        "id": "T1552.001",
+        "url": "https://attack.mitre.org/techniques/T1552/001",
+        "commands": [
+            {
+                "command": ".config/"
+            },
+            {
+                "command": ".conf"
+            },
+            {
+                "command": "grep"
+            },
+            {
+                "command": "find"
+            }
+        ]
+    },
+    {
+        "id": "T1552.004",
+        "url": "https://attack.mitre.org/techniques/T1552/004",
+        "commands": [
+            {
+                "command": ".ssh/"
+            },
+            {
+                "command": ".key"
+            },
+            {
+                "command": ".p12"
+            },
+            {
+                "command": ".pfx"
+            },
+            {
+                "command": ".pem"
+            },
+            {
+                "command": ".cer"
+            },
+            {
+                "command": ".p7b"
+            },
+            {
+                "command": ".asc"
+            }
+        ]
+    },
+    {
+        "id": "T1497.003",
+        "url": "https://attack.mitre.org/techniques/T1497/003",
+        "commands": [
+            {
+                "command": "time"
+            },
+            {
+                "command": "sleep"
+            }
+        ]
+    }
+]
