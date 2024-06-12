@@ -5,4 +5,5 @@ with open('techniques.json', 'r') as techniques_file:
 
 objects = json.loads(data)
 
-print(objects)
+for technique in objects:
+  print(technique['commands'])
