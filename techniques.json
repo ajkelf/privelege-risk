@@ -52,12 +52,6 @@
         "url": "https://attack.mitre.org/techniques/T1087/002",
         "commands": [
             {
-                "command": "net user /domain"
-            },
-            {
-                "command": "net group /domain"
-            },
-            {
                 "command": "ldapsearch"
             }
         ]
@@ -67,10 +61,7 @@
         "url": "https://attack.mitre.org/techniques/T1087/001",
         "commands": [
             {
-                "command": "net user"
-            },
-            {
-                "command": "net localgroup"
+                "command": "/etc/group"
             },
             {
                 "command": "/etc/passwd"
@@ -187,7 +178,7 @@
                 "command": "modinfo"
             },
             {
-                "command": ",ko"
+                "command": ".ko"
             },
             {
                 "command": "uname -a"
@@ -1499,6 +1490,9 @@
         "commands": [
             {
                 "command": "df"
+            },
+            {
+                "command": "du"
             },
             {
                 "command": "uname"
