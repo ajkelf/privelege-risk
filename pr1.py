@@ -32,15 +32,17 @@ def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
       cmd_conjuct = 0
 
       if cmd_for_analyze == cmd_to_compare:
-        print(f"  compare with: {cmd_to_compare}")
-        print(f"    exact match, MAT={_MATnames[i-1]}")
+        if debug:
+          print(f"  compare with: {cmd_to_compare}")
+          print(f"    exact match, MAT={_MATnames[i-1]}")
         cmd_conjuct = 1
         ME = 1
 
       if cmd_to_compare not in ["^","+","..","$"]:
         if re.search(cmd_to_compare, cmd_for_analyze):
-          print(f"  compare with: {cmd_to_compare}")
-          print(f"    regex pattern match, MAT={_MATnames[i-1]}")
+          if debug:
+            print(f"  compare with: {cmd_to_compare}")
+            print(f"    regex pattern match, MAT={_MATnames[i-1]}")
           cmd_conjuct = 1
           MP = 1
 
@@ -93,5 +95,5 @@ commands1_objects = json.loads(commands1_data)
 print(f"Commands #1 list number of commands = {len(commands1_objects)}")
 
 for cmd1 in commands1_objects:
-  Dcmd = calculate_d_command(cmd1["command"], _MAT, _A, _MATnames)
+  Dcmd = calculate_d_command(cmd1["command"], _MAT, _A, _MATnames, 1)
   print(f"Dcmd = {Dcmd}")
