@@ -100,7 +100,7 @@ for technique in techniques_objects:
 
 
 #number of commands list collections
-h = 2
+h = 3
 
 for f in range(1,h+1):
   print(f"f={f}")

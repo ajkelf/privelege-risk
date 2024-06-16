@@ -1,0 +1,2984 @@
+[
+  {
+    "command": "  Require all granted"
+  },
+  {
+    "command": " <IfModule mod_dav.c>"
+  },
+  {
+    "command": "  Dav off"
+  },
+  {
+    "command": " </IfModule>"
+  },
+  {
+    "command": " SetEnv HOME /var/www/owncloud"
+  },
+  {
+    "command": " SetEnv HTTP_HOME /var/www/owncloud"
+  },
+  {
+    "command": "</Directory>"
+  },
+  {
+    "command": "</VirtualHost>"
+  },
+  {
+    "command": "EOM"
+  },
+  {
+    "command": "a2dissite 000-default"
+  },
+  {
+    "command": "a2ensite owncloud.conf"
+  },
+  {
+    "command": "sed -i '/[mysqld]/atransaction-isolation = READ-COMMITTED\nperformance_schema = on' /etc/mysql/mariadb.conf.d/50-server.cnf"
+  },
+  {
+    "command": "systemctl start mariadb"
+  },
+  {
+    "command": "mysql -u root -e 'CREATE DATABASE IF NOT EXISTS owncloud; GRANT ALL PRIVILEGES ON owncloud.* TO owncloud@localhost IDENTIFIED BY '${sec_db_pwd}'';"
+  },
+  {
+    "command": "a2enmod dir env headers mime rewrite setenvif"
+  },
+  {
+    "command": "systemctl restart apache2"
+  },
+  {
+    "command": "cd /var/www/"
+  },
+  {
+    "command": "wget https://download.owncloud.org/community/owncloud-complete-latest.tar.bz2 && tar -xjf owncloud-complete-latest.tar.bz2 && chown -R www-data. owncloud"
+  },
+  {
+    "command": "occ maintenance:install     --database 'mysql'     --database-name 'owncloud'     --database-user 'owncloud'     --database-pass ${sec_db_pwd}     --data-dir '/var/www/owncloud/data'     --admin-user 'admin'     --admin-pass ${sec_admin_pwd}"
+  },
+  {
+    "command": "my_ip=$(hostname -I|cut -f1 -d ' ')"
+  },
+  {
+    "command": "occ config:system:set trusted_domains 1 --value='$my_ip'"
+  },
+  {
+    "command": "occ config:system:set trusted_domains 2 --value='$my_domain'"
+  },
+  {
+    "command": "occ background:cron"
+  },
+  {
+    "command": "echo '*/15  *  *  *  * /var/www/owncloud/occ system:cron'   | sudo -u www-data -g crontab tee -a   /var/spool/cron/crontabs/www-data"
+  },
+  {
+    "command": "echo '0  2  *  *  * /var/www/owncloud/occ dav:cleanup-chunks'   | sudo -u www-data -g crontab tee -a   /var/spool/cron/crontabs/www-data"
+  },
+  {
+    "command": "occ config:system:set    memcache.local    --value 'OCMemcacheAPCu'"
+  },
+  {
+    "command": "occ config:system:set    memcache.locking    --value 'OCMemcacheRedis'"
+  },
+  {
+    "command": "occ config:system:set    redis    --value '{'host': '127.0.0.1', 'port': '6379'}'    --type json"
+  },
+  {
+    "command": "FILE='/etc/logrotate.d/owncloud'"
+  },
+  {
+    "command": "sudo cat <<EOM >$FILE"
+  },
+  {
+    "command": "/var/www/owncloud/data/owncloud.log {"
+  },
+  {
+    "command": "  size 10M"
+  },
+  {
+    "command": "  rotate 12"
+  },
+  {
+    "command": "  copytruncate"
+  },
+  {
+    "command": "  missingok"
+  },
+  {
+    "command": "  compress"
+  },
+  {
+    "command": "  compresscmd /bin/gzip"
+  },
+  {
+    "command": "}"
+  },
+  {
+    "command": "EOM"
+  },
+  {
+    "command": "cd /var/www/"
+  },
+  {
+    "command": "chown -R www-data. owncloud"
+  },
+  {
+    "command": "occ -V"
+  },
+  {
+    "command": "echo 'Your Admin password is: '$sec_admin_pwd"
+  },
+  {
+    "command": "echo 'It's documented at /etc/.sec_admin_pwd.txt'"
+  },
+  {
+    "command": "echo 'Your Database Password is: '$sec_db_pwd"
+  },
+  {
+    "command": "echo 'It's documented at /etc/.sec_db_pwd.txt and in your config.php'"
+  },
+  {
+    "command": "echo 'Your ownCloud is accessable under: '$my_domain"
+  },
+  {
+    "command": "echo 'The Installation is complete.'"
+  },
+  {
+    "command": "sudo snap install core; sudo snap refresh core"
+  },
+  {
+    "command": "certbot"
+  },
+  {
+    "command": "sudo snap install --classic certbot"
+  },
+  {
+    "command": "sudo ln -s /snap/bin/certbot /usr/bin/certbot"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "fdisk -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "apt-get install gparted"
+  },
+  {
+    "command": "parted "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "crontab -u www-data -e"
+  },
+  {
+    "command": "/var/www/owncloud/occ dav:cleanup-chunks"
+  },
+  {
+    "command": "sudo -u www-data /var/www/owncloud/occ dav:cleanup-chunks"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/www/owncloud"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi config/config.php "
+  },
+  {
+    "command": "sudo -u www-data php occ status"
+  },
+  {
+    "command": "sudo -u www-data php occ config:list"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -hT"
+  },
+  {
+    "command": "lsblk"
+  },
+  {
+    "command": "fdisk -l"
+  },
+  {
+    "command": "growpart /dev/vda 1"
+  },
+  {
+    "command": "resize2fs /dev/vda1"
+  },
+  {
+    "command": "df -hT"
+  },
+  {
+    "command": "lsblk"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "du -sh *"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -sh *"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd /var/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd www/"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd owncloud"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd data/"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd anastasia.ivanova/"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd files_versions/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -sh * | sort -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./occ versions:cleanup"
+  },
+  {
+    "command": "sudo -u www-data ./occ versions:cleanup"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "cd apps-external/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "wget https://github.com/owncloud/theme-example/archive/master.zip"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "unzip master.zip "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm master.zip "
+  },
+  {
+    "command": "mv theme-example-master munitheme"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sed -i 's#<id>theme-example<#<id>munitheme<#' 'munitheme/appinfo/info.xml'"
+  },
+  {
+    "command": "less ./munitheme/appinfo/info.xml "
+  },
+  {
+    "command": "vi ./munitheme/appinfo/info.xml "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sudo chown -R www-data: munitheme/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sudo -u www-data php occ app:enable munitheme"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "sudo -u www-data php occ app:enable munitheme"
+  },
+  {
+    "command": "grep -inr 'integrity.ignore.missing.app.signature' ./*"
+  },
+  {
+    "command": "vi ./config/config.php "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi theme-bootstrap.sh"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi read-config.php"
+  },
+  {
+    "command": "vi read-config.php "
+  },
+  {
+    "command": "rm read-config.php "
+  },
+  {
+    "command": "rm theme-bootstrap.sh "
+  },
+  {
+    "command": "nano theme-bootstrap.sh"
+  },
+  {
+    "command": "nano read-config.php"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sudo chown -R www-data: read-config.php "
+  },
+  {
+    "command": "sudo chown -R www-data: theme-bootstrap.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown +x theme-bootstrap.sh "
+  },
+  {
+    "command": "sudo -u www-data chown +x theme-bootstrap.sh "
+  },
+  {
+    "command": "sudo -u www-data chmod +x theme-bootstrap.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sudo -u www-data ./theme-bootstrap.sh munitheme /var/www/owncloud"
+  },
+  {
+    "command": "sudo ./theme-bootstrap.sh munitheme /var/www/owncloud"
+  },
+  {
+    "command": "sudo chmod +x read-config.php "
+  },
+  {
+    "command": "sudo ./theme-bootstrap.sh munitheme /var/www/owncloud"
+  },
+  {
+    "command": "cd apps-external/munitheme/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd core/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/ubuntu/background.jpg ./background.jpg "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -R ./munitheme/ /var/www/owncloud/apps-external/"
+  },
+  {
+    "command": "cd /var/www/owncloud/apps-external/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd munitheme/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd core/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm favicon-touch.svg "
+  },
+  {
+    "command": "rm favicon.svg "
+  },
+  {
+    "command": "rm logo-icon.svg "
+  },
+  {
+    "command": "rm logo.svg "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd css/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less defaults.php "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi README.md "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/ubuntu/munitheme/defaults.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "cd /var/www/owncloud"
+  },
+  {
+    "command": "sudo -u www-data php occ status"
+  },
+  {
+    "command": "sudo -u www-data ./occ versions:cleanup"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "sudo -u www-data /var/www/owncloud/occ versions:cleanup"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "fdisk"
+  },
+  {
+    "command": "fdisk -l"
+  },
+  {
+    "command": "fdisk /dev/vdb"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "fdisk /dev/vdb"
+  },
+  {
+    "command": "mount"
+  },
+  {
+    "command": "ll /dev/vdb1"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "mount /dev/vdb1"
+  },
+  {
+    "command": "cat /etc/fstab"
+  },
+  {
+    "command": "gparted"
+  },
+  {
+    "command": "apt install gparted"
+  },
+  {
+    "command": "gparted"
+  },
+  {
+    "command": "fdisk -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ,,"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir mail"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vim /etc/fstab "
+  },
+  {
+    "command": "mount /home/mail"
+  },
+  {
+    "command": "fdisk /dev/vdb"
+  },
+  {
+    "command": "fdisk -l"
+  },
+  {
+    "command": "mkfs"
+  },
+  {
+    "command": "mkfs -t ext4 /dev/vdb1"
+  },
+  {
+    "command": "mount /home/mail"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "apt-get update"
+  },
+  {
+    "command": "apt-get upgrade"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "hostnamectl -?"
+  },
+  {
+    "command": "hostnamectl --help"
+  },
+  {
+    "command": "hostnamectl set-hostname mx.m-uni.ru"
+  },
+  {
+    "command": "hostname"
+  },
+  {
+    "command": "hostnamectl status"
+  },
+  {
+    "command": "apt-get update"
+  },
+  {
+    "command": "apt-get install postfix -y"
+  },
+  {
+    "command": "postconf mail_version"
+  },
+  {
+    "command": "less /etc/postfix/main.cf"
+  },
+  {
+    "command": "apt-get remove postfix -y"
+  },
+  {
+    "command": "apt-get install postfix -y"
+  },
+  {
+    "command": "postconf"
+  },
+  {
+    "command": "postconf | grep 'domain'"
+  },
+  {
+    "command": "ss -lnpt | grep master"
+  },
+  {
+    "command": "dpkg -L postfix | grep /usr/sbin/"
+  },
+  {
+    "command": "ufw allow 25/tcp"
+  },
+  {
+    "command": "apt install telnet"
+  },
+  {
+    "command": "telnet gmail-smtp-in.l.google.com 25"
+  },
+  {
+    "command": "echo 'test email' | sendmail '1@m-uni.ru'"
+  },
+  {
+    "command": "postconf | grep 'myorigin'"
+  },
+  {
+    "command": "cat /etc/mailname "
+  },
+  {
+    "command": "ll /etc/mailname "
+  },
+  {
+    "command": "vi /etc/mailname "
+  },
+  {
+    "command": "echo 'test email' | sendmail '1@m-uni.ru'"
+  },
+  {
+    "command": "postconf mail_spool_directory"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "postconf | grep 'mail_spool_directory'"
+  },
+  {
+    "command": "postfix check"
+  },
+  {
+    "command": "nano "
+  },
+  {
+    "command": "nano /etc/postfix/main.cf"
+  },
+  {
+    "command": "nano /etc/postfix/master.cf"
+  },
+  {
+    "command": "postconf mail_spool_directory"
+  },
+  {
+    "command": "ll /var/mail"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "postconf mail_spool_directory=/home/mail"
+  },
+  {
+    "command": "postconf reload"
+  },
+  {
+    "command": "postfix check"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "postfix check"
+  },
+  {
+    "command": "postconf mail_spool_directory"
+  },
+  {
+    "command": "cd /home/mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "apt-get install mailutils"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log "
+  },
+  {
+    "command": "less /var/log/apache2/other_vhosts_access.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/other_vhosts_access.log | grep fileupload"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "hostname -f"
+  },
+  {
+    "command": "telnet gmail-smtp-in.l.google.com 25"
+  },
+  {
+    "command": "postconf | grep message_size_limit"
+  },
+  {
+    "command": "postconf -e message_size_limit=52428800"
+  },
+  {
+    "command": "postconf | grep mailbox_size_limit"
+  },
+  {
+    "command": "less /etc/postfix/main.cf"
+  },
+  {
+    "command": "nano /etc/aliases"
+  },
+  {
+    "command": "postconf inet_protocols"
+  },
+  {
+    "command": "postconf -e 'inet_protocols = ipv4'"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "apt update"
+  },
+  {
+    "command": "apt upgrade"
+  },
+  {
+    "command": "ufw allow 80,443,587,465,143,993/tcp"
+  },
+  {
+    "command": "apt dist-upgrade"
+  },
+  {
+    "command": "apt install certbot"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat owncloud"
+  },
+  {
+    "command": "cat owncloud.conf "
+  },
+  {
+    "command": "cat owncloud-le-ssl.conf "
+  },
+  {
+    "command": "cp owncloud-le-ssl.conf mx_m-uni_ru.conf"
+  },
+  {
+    "command": "nano mx_m-uni_ru.conf "
+  },
+  {
+    "command": "cd /var/www"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir mx_m-uni_ru"
+  },
+  {
+    "command": "cd mx_m-uni_ru/"
+  },
+  {
+    "command": "nano index.html"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi mx_m-uni_ru.conf "
+  },
+  {
+    "command": "a2ensite"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log "
+  },
+  {
+    "command": "systemctl restart apache2"
+  },
+  {
+    "command": "journalctl -xe"
+  },
+  {
+    "command": "a2dissite"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "systemctl start apache2"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "apt-get update"
+  },
+  {
+    "command": "apt-get upgrade"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "apt-get update"
+  },
+  {
+    "command": "apt-get upgrade"
+  },
+  {
+    "command": "apt autoremove"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "do-release-upgrade -d"
+  },
+  {
+    "command": "vi /etc/update-manager/release-upgrades"
+  },
+  {
+    "command": "do-release-upgrade -d"
+  },
+  {
+    "command": "ufw status verbose"
+  },
+  {
+    "command": "iptables -nvL"
+  },
+  {
+    "command": "apt install -y certbot"
+  },
+  {
+    "command": "certbot certonly --manual --preferred-challenges dns -d m-uni.ru"
+  },
+  {
+    "command": "apt list"
+  },
+  {
+    "command": "apt --help"
+  },
+  {
+    "command": "apt install -y postfix"
+  },
+  {
+    "command": "apt remove postfix"
+  },
+  {
+    "command": "apt search imap"
+  },
+  {
+    "command": "apt install -y postfix"
+  },
+  {
+    "command": "cat /etc/postfix/main.cf"
+  },
+  {
+    "command": "cp /etc/postfix/main.cf /etc/postfix/main.cf.bak"
+  },
+  {
+    "command": "nano /etc/postfix/main.cf"
+  },
+  {
+    "command": "nano /etc/postfix/virtual_mailbox_domains"
+  },
+  {
+    "command": "postmap /etc/postfix/virtual_mailbox_domains"
+  },
+  {
+    "command": "nano /etc/postfix/master.cf"
+  },
+  {
+    "command": "sudo apt install -y dovecot-core dovecot-imapd dovecot-pop3d dovecot-lmtpd"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-mail.conf "
+  },
+  {
+    "command": "cd /home/mail/"
+  },
+  {
+    "command": "mkdir vhosts"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir -p /home/mail/vhosts/m-uni.ru"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vhosts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "groupadd -g 5000 vmail"
+  },
+  {
+    "command": "useradd -r -g vmail -u 5000 vmail -d /var/mail/vhosts -c 'Virtual Mail User'"
+  },
+  {
+    "command": "chown -R vmail:vmail /home/mail/vhosts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-master.conf "
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-auth.conf "
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext "
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-ssl.conf "
+  },
+  {
+    "command": "cat /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "nano /etc/postfix/virtual"
+  },
+  {
+    "command": "postmap /etc/postfix/virtual"
+  },
+  {
+    "command": "apt-get install spamassassin spamc -y"
+  },
+  {
+    "command": "adduser spamd --disabled-login"
+  },
+  {
+    "command": "nano /etc/default/spamassassin "
+  },
+  {
+    "command": "mv /etc/spamassassin/local.cf  /etc/spamassassin/local.cf.bk"
+  },
+  {
+    "command": "nano /etc/spamassassin/local.cf "
+  },
+  {
+    "command": "apt install -y postfix-policyd-spf-python"
+  },
+  {
+    "command": "apt install -y opendkim opendkim-tools"
+  },
+  {
+    "command": "DOMAIN=m-uni.ru"
+  },
+  {
+    "command": "nano /etc/opendkim.conf "
+  },
+  {
+    "command": "mkdir /etc/opendkim"
+  },
+  {
+    "command": "mkdir /etc/opendkim/keys"
+  },
+  {
+    "command": "chown -R opendkim:opendkim /etc/opendkim"
+  },
+  {
+    "command": "chmod go-rw /etc/opendkim/keys"
+  },
+  {
+    "command": "echo '*@$DOMAIN    default._domainkey.$DOMAIN446  *@*.$DOMAIN    default._domainkey.$DOMAIN' > /etc/opendkim/signing.table"
+  },
+  {
+    "command": "echo 'default._domainkey.$DOMAIN    $DOMAIN:default:/etc/opendkim/keys/$DOMAIN/default.private' > /etc/opendkim/key.table"
+  },
+  {
+    "command": "echo '127.0.0.1449  localhost 450  .$DOMAIN' > /etc/opendkim/trusted.hosts"
+  },
+  {
+    "command": "cd /etc/opendkim"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir /etc/opendkim/keys/$DOMAIN"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd key"
+  },
+  {
+    "command": "cd keys/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "opendkim-genkey -b 2048 -d $DOMAIN -D /etc/opendkim/keys/$DOMAIN -s default -v"
+  },
+  {
+    "command": "chown opendkim:opendkim /etc/opendkim/keys/$DOMAIN/default.private"
+  },
+  {
+    "command": "chmod 600 /etc/opendkim/keys/$DOMAIN/default.private"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "systemctl restart dovecot"
+  },
+  {
+    "command": "systemctl enable --now spamassassin"
+  },
+  {
+    "command": "systemctl restart opendkim"
+  },
+  {
+    "command": "apt install -y nginx"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "cd /etc/apache2/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat owncloud-le-ssl.conf "
+  },
+  {
+    "command": "apache2 -v"
+  },
+  {
+    "command": "apt install mariadb-server mariadb-client"
+  },
+  {
+    "command": "systemctl status mariadb"
+  },
+  {
+    "command": "mariadb -u root"
+  },
+  {
+    "command": "mariadb --version"
+  },
+  {
+    "command": "php --version"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "wget https://github.com/roundcube/roundcubemail/releases/download/1.6.5/roundcubemail-1.6.5-complete.tar.gz"
+  },
+  {
+    "command": "tar xvf roundcubemail-1.6.5-complete.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/www/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mx_m-uni_ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat index.html "
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv roundcubemail-1.6.5 /var/www/mx_m-uni_ru/"
+  },
+  {
+    "command": "cd /var/www/mx_m-uni_ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd roundcubemail-1.6.5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv * ../"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd roundcubemail-1.6.5/"
+  },
+  {
+    "command": "mv .htaccess ../"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm index.html "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data temp/ logs/ -R"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "apt install software-properties-common"
+  },
+  {
+    "command": "add-apt-repository ppa:ondrej/php"
+  },
+  {
+    "command": "apt update"
+  },
+  {
+    "command": "apt install php-net-ldap2 php-net-ldap3 php-imagick php8.1-common php8.1-gd php8.1-imap php8.1-mysql php8.1-curl php8.1-zip php8.1-xml php8.1-mbstring php8.1-bz2 php8.1-intl php8.1-gmp php8.1-redis"
+  },
+  {
+    "command": "mysql -u root"
+  },
+  {
+    "command": "mysql roundcube < /var/www/mx_m-uni_ru/SQL/mysql.initial.sql "
+  },
+  {
+    "command": "mysql roundcubemail < /var/www/mx_m-uni_ru/SQL/mysql.initial.sql "
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano mx_m-uni_ru.conf "
+  },
+  {
+    "command": "a2ensite"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/roundcube_error.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano mx_m-uni_ru.conf "
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "certbot"
+  },
+  {
+    "command": "apt-get install certbot"
+  },
+  {
+    "command": "certbot --help"
+  },
+  {
+    "command": "nano mx_m-uni_ru.conf "
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "systemctl start apache2"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "apt-get install php-imagick"
+  },
+  {
+    "command": "cd /var/www/mx_m-uni_ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd temp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /home/ubuntu/"
+  },
+  {
+    "command": "cp /home/ubuntu/config.inc.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown ubuntu:ubuntu config.inc.php"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/ubuntu/config.inc.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano config.inc.php"
+  },
+  {
+    "command": "nano config.inc.php.sample "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv installer installer-used"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "systemctl status nginx"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sytemctl disable nginx"
+  },
+  {
+    "command": "systemctl disable nginx"
+  },
+  {
+    "command": "systemctl start apache2"
+  },
+  {
+    "command": "systemctl stop nginx"
+  },
+  {
+    "command": "systemctl start apache2"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "apt-get install certbot-apache"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "apt-get install certbot"
+  },
+  {
+    "command": "certbot"
+  },
+  {
+    "command": "certbot --help"
+  },
+  {
+    "command": "apt install snapd"
+  },
+  {
+    "command": "apt-get remove certbot"
+  },
+  {
+    "command": "snap install --classic certbot"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "ln -s /snap/bin/certbot /usr/bin/certbot"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano mx_m-uni_ru.conf "
+  },
+  {
+    "command": "nano owncloud.conf "
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "ufw status"
+  },
+  {
+    "command": "dpkg --help"
+  },
+  {
+    "command": "apt --help"
+  },
+  {
+    "command": "netstat -nvl"
+  },
+  {
+    "command": "netstat"
+  },
+  {
+    "command": "apt install net-tools"
+  },
+  {
+    "command": "netstat -nvl"
+  },
+  {
+    "command": "cd /var/mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vhosts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd m-uni.ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "cat /etc/dovecot/dovecot-dict-auth.conf.ext "
+  },
+  {
+    "command": "md5sum"
+  },
+  {
+    "command": "md5sum gv5rNgUzVqJwSJeqtYSN"
+  },
+  {
+    "command": "md5sum.textutils --help"
+  },
+  {
+    "command": "echo -n gv5rNgUzVqJwSJeqtYSN | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext "
+  },
+  {
+    "command": "echo -n Q4Knwhy67wmFVfxpNOgl | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext "
+  },
+  {
+    "command": "nano /etc/postfix/virtual"
+  },
+  {
+    "command": "ps aux | grep dovecot"
+  },
+  {
+    "command": "systemctl restart dovecot"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "less /var/log/auth.log"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "systemctl status postfix"
+  },
+  {
+    "command": "systemctl status dovecot"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "netstat -nvl"
+  },
+  {
+    "command": "netstat -n"
+  },
+  {
+    "command": "netstat -nl"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext"
+  },
+  {
+    "command": "echo -n p9FAcKAMPKbCa4Nb4QXR | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "echo -n nZtH9IQqYyLTBSWLekux | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "echo -n WoFeCGL99LshqXkuwts6 | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "echo -n MxeF4UhpuYW838H4XJHa | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users"
+  },
+  {
+    "command": "certbot"
+  },
+  {
+    "command": "history | certbot"
+  },
+  {
+    "command": "history | grep certbot"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-ssl.conf"
+  },
+  {
+    "command": "cd /etc/letsencrypt/live/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mx.m-uni.ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "nano /etc/dovecot/conf.d/10-ssl.conf"
+  },
+  {
+    "command": "systemctl restart dovecot"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less syslog"
+  },
+  {
+    "command": "ll /etc/postfix/master.cf"
+  },
+  {
+    "command": "less /etc/postfix/master.cf"
+  },
+  {
+    "command": "less /etc/postfix/main.cf"
+  },
+  {
+    "command": "less /etc/postfix/virtual_mailbox_domains"
+  },
+  {
+    "command": "less /etc/postfix/virtual"
+  },
+  {
+    "command": "less /etc/postfix/postfix-files"
+  },
+  {
+    "command": "less mail.log"
+  },
+  {
+    "command": "cd /var/www/owncloud"
+  },
+  {
+    "command": "occ "
+  },
+  {
+    "command": "occ --help"
+  },
+  {
+    "command": "php -v"
+  },
+  {
+    "command": "apt-get install php7.4 php7.4-fpm php7.4-cli -y"
+  },
+  {
+    "command": "php -v"
+  },
+  {
+    "command": "update-alternatives --config php "
+  },
+  {
+    "command": "php -v"
+  },
+  {
+    "command": "occ"
+  },
+  {
+    "command": "cd /var/log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less mail."
+  },
+  {
+    "command": "less mail.log"
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat dovecot-users "
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd ."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd postfix/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less virtual"
+  },
+  {
+    "command": "less virtual_mailbox_domains"
+  },
+  {
+    "command": "date"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat dovecot-users "
+  },
+  {
+    "command": "nano dovecot-users "
+  },
+  {
+    "command": "cd /etc/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd postfix"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat virtual"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap virtual"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "less main.cf"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases "
+  },
+  {
+    "command": "cat aliases"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less main.cf"
+  },
+  {
+    "command": "less master.cf"
+  },
+  {
+    "command": "nano main.cf"
+  },
+  {
+    "command": "nano /etc/postfix/canonical"
+  },
+  {
+    "command": "postmap ./canonical "
+  },
+  {
+    "command": "nano alias"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm alias"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd postfix"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat virtual"
+  },
+  {
+    "command": "cd /etc/postfix"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano main.cf"
+  },
+  {
+    "command": "less master.cf"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "cat canonical"
+  },
+  {
+    "command": "cat aliases"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "nano main.cf"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "systemctl status postfix"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "cat aliases"
+  },
+  {
+    "command": "cat virtual"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat dynamicmaps.cf"
+  },
+  {
+    "command": "cat virtual"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "/usr/sbin/sendmail -bv db@m-uni.ru"
+  },
+  {
+    "command": "/usr/sbin/sendmail -v db@m-uni.ru"
+  },
+  {
+    "command": "nano master.cf"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano master.cf"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "postmap -q 'db@m-uni.ru' hash:/etc/postfix/canonical"
+  },
+  {
+    "command": "nano main.cf"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano main.cf"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl restart postfix"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano dovecot-users "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/mail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vhosts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd m-uni.ru/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ad"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "rm -rf ./advert/"
+  },
+  {
+    "command": "rm -rf ./condicio.iuris/"
+  },
+  {
+    "command": "rm -rf ./lex.concursus/"
+  },
+  {
+    "command": "rm -rf ./llm/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/postfix"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "cd ../dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano dovecot-users "
+  },
+  {
+    "command": "cd ../postfix"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "cd ../dovecot/"
+  },
+  {
+    "command": "nano dovecot-users "
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "echo -n wXsp217KI35tWYpNphBm | md5sum"
+  },
+  {
+    "command": "nano dovecot-users"
+  },
+  {
+    "command": "cd ../postfix"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "echo -n HXupxz8FWuJZyJcK0kaj | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "echo -n jpml1O8GozeeWQrLx3GZ | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n 2GD3AGHr1Rvhg96vqaK9 | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n zcYdKnfPS0L3GkRzRwTD | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n URD5fFFb6Om6AZwGlWmY | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "echo -n 92gjrIxGhQxV0iK7w1kO | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n X5a5SmO8bbucI3LJBgVd | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n C9hyZzkcY6nC1IDJsMVj | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "echo -n 7GBHirCNEQuDVAToNl3K | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n IKzX9w5jqpx5N2YoWNYJ | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n QyyRcaESFf7gPpsvcDFX | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n DIJoZwp0qkdsEhNOAi7a | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "echo -n 4INi76CRm9HFHLYa3Os8 | md5sum"
+  },
+  {
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "certbot certonly --manual --preferred-challenges dns -d m-uni.ru"
+  },
+  {
+    "command": "certbot certonly --manual"
+  },
+  {
+    "command": "doveadm fts"
+  },
+  {
+    "command": "doveadm"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less 10-mail.conf "
+  },
+  {
+    "command": "grep -inr 'fts' ./"
+  },
+  {
+    "command": "ls /usr/lib64/dovecot/ | grep -E 'solr|fts' "
+  },
+  {
+    "command": "ls /usr/lib/dovecot/ | grep -E 'solr|fts'"
+  },
+  {
+    "command": "apt install dovecot-solr"
+  },
+  {
+    "command": "ls /usr/lib/dovecot/ | grep -E 'solr|fts'"
+  },
+  {
+    "command": "apt install libexpat"
+  },
+  {
+    "command": "doveadm"
+  },
+  {
+    "command": "doveadm fts"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi 90-fts.conf"
+  },
+  {
+    "command": "less 10-mail.conf "
+  },
+  {
+    "command": "cat 90-"
+  },
+  {
+    "command": "cat 90-fts.conf "
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "wget https://www.apache.org/dyn/closer.lua/solr/solr/9.5.0/solr-9.5.0.tgz"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xzf solr-9.5.0.tgz solr-9.5.0/bin/install_solr_service.sh --strip_components=2"
+  },
+  {
+    "command": "tar xzf solr-9.5.0.tgz solr-9.5.0/bin/install_solr_service.sh "
+  },
+  {
+    "command": "tar xzf solr-9.5.0.tgz "
+  },
+  {
+    "command": "rm solr-9.5.0.tgz "
+  },
+  {
+    "command": "wget https://www.apache.org/dyn/closer.lua/solr/solr/9.5.0/solr-9.5.0.tgz?action=download"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv solr-9.5.0.tgz?action=download solr-9.5.0.tgz"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xzf solr-9.5.0.tgz solr-9.5.0/bin/install_solr_service.sh --strip_components=2"
+  },
+  {
+    "command": "tar xzf solr-9.5.0.tgz solr-9.5.0/bin/install_solr_service.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp ./solr-9.5.0/bin/install_solr_service.sh ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "bash ./install_solr_service.sh solr-9.5.0.tgz "
+  },
+  {
+    "command": "apt-get install default-jdk "
+  },
+  {
+    "command": "bash ./install_solr_service.sh solr-9.5.0.tgz "
+  },
+  {
+    "command": "service solr status"
+  },
+  {
+    "command": "service solr start"
+  },
+  {
+    "command": "ufw status"
+  },
+  {
+    "command": "netstat"
+  },
+  {
+    "command": "sudo -u solr /opt/solr/bin/solr create -c dovecot"
+  },
+  {
+    "command": "ll /var/solr/data/"
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll /var/solr/data/dovecot/"
+  },
+  {
+    "command": "cd /var/solr/data/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less solrconfig.xml "
+  },
+  {
+    "command": "cp solrconfig.xml solrconfig_xml-old20240305"
+  },
+  {
+    "command": "vi solrconfig.xml"
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi solrconfig"
+  },
+  {
+    "command": "vi solrconfig.xml "
+  },
+  {
+    "command": "echo '' > solrconfig.xml "
+  },
+  {
+    "command": "vi solrconfig.xml "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm solrconfig.xml "
+  },
+  {
+    "command": "cp solrconfig_xml-old20240305 solrconfig.xml"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown solr:solr solrconfig.xml "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "telnet localhost imap"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/dovecot/conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat 90-fts.conf "
+  },
+  {
+    "command": "vi 90-fts.conf "
+  },
+  {
+    "command": "doveadm"
+  },
+  {
+    "command": "doveadm reload"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log "
+  },
+  {
+    "command": "less /var/log/apache2/other_vhosts_access.log"
+  },
+  {
+    "command": "cat /var/log/apache2/other_vhosts_access.log | less backupmuni"
+  },
+  {
+    "command": "cat /var/log/apache2/other_vhosts_access.log | grep backupmuni | less"
+  },
+  {
+    "command": "cat /var/log/apache2/other_vhosts_access.log | grep 'remote.php' | less"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "occ"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "sudo -u www-data /var/www/owncloud/occ versions:cleanup"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "occ --version"
+  },
+  {
+    "command": "cat /var/log/apache2/other_vhosts_access.log | grep 'remote.php' | less"
+  },
+  {
+    "command": "less /var/log/apache2/other_vhosts_access.log"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "dovecot --build-options"
+  },
+  {
+    "command": "dovecot --version"
+  },
+  {
+    "command": "ls /usr/lib64/dovecot/ | grep -E 'solr|fts' "
+  },
+  {
+    "command": "ls /usr/lib/dovecot/ | grep -E 'solr|fts' "
+  },
+  {
+    "command": "cat /etc/dovecot/conf.d/10-mail.conf "
+  },
+  {
+    "command": "less /etc/dovecot/conf.d/10-mail.conf "
+  },
+  {
+    "command": "cat /etc/dovecot/conf.d/10-mail.conf | grep 'plugin'"
+  },
+  {
+    "command": "sudo apt-get update"
+  },
+  {
+    "command": "apt-get -y install dovecot-solr"
+  },
+  {
+    "command": "ls /usr/lib/dovecot/ | grep -E 'solr|fts' "
+  },
+  {
+    "command": "dovecot --build-options"
+  },
+  {
+    "command": "cd /etc/dovecot/conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano 90-fts.conf "
+  },
+  {
+    "command": "netstat -tulpn"
+  },
+  {
+    "command": "nano 90-fts.conf "
+  },
+  {
+    "command": "doveadm fts rescan -u db"
+  },
+  {
+    "command": "doveadm fts rescan -u db@m-uni.ru"
+  },
+  {
+    "command": "doveadm ?"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "history > history.txt"
+  }
+]
