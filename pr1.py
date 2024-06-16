@@ -85,15 +85,33 @@ for technique in techniques_objects:
     commands.append(command)
   _MAT[i-1] = commands
 
-#source commands
-with open('commands1.json', 'r') as commands1_file:
-  commands1_data = commands1_file.read()
+#source commands=======COMMANDS-----#1
+#with open('commands1.json', 'r') as commands1_file:
+#  commands1_data = commands1_file.read()
 
-commands1_objects = json.loads(commands1_data)
-print(f"Commands #1 list number of commands = {len(commands1_objects)}")
+#commands1_objects = json.loads(commands1_data)
+#print(f"Commands #1 list number of commands = {len(commands1_objects)}")
 
 #making analyze for commands in Commands list #1
-for cmd1 in commands1_objects:
-  cmd = cmd1["command"]
-  Dcmd = calculate_d_command(cmd, _MAT, _A, _MATnames, 0)
-  print(f"cmd={cmd}, Dcmd={Dcmd}")
+#for cmd1 in commands1_objects:
+#  cmd = cmd1["command"]
+#  Dcmd = calculate_d_command(cmd, _MAT, _A, _MATnames, 0)
+#  print(f"cmd={cmd}, Dcmd={Dcmd}")
+
+
+#number of commands list collections
+h = 2
+
+for f in range(1,h+1):
+  print(f"f={f}")
+  with open('commands' + str(f) + '.json', 'r') as commands_file:
+    commands_data = commands_file.read()
+
+  commands_objects = json.loads(commands_data)
+  print(f"Commands #{f} list number of commands = {len(commands_objects)}")
+
+  #making analyze for commands in Commands list #1
+  for cmd1 in commands_objects:
+    cmd = cmd1["command"]
+    Dcmd = calculate_d_command(cmd, _MAT, _A, _MATnames, 0)
+    print(f"cmd={cmd}, Dcmd={Dcmd}")

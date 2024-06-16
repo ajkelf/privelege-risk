@@ -1,0 +1,2903 @@
+[
+  {
+    "command": "passwd root"
+  },
+  {
+    "command": "vi /etc/ssh/sshd_config "
+  },
+  {
+    "command": "systemctl restart sshd"
+  },
+  {
+    "command": "nmtui"
+  },
+  {
+    "command": "wget http://domain/open/core-installers/vendor-product-3.3.0-core.tar.gz"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "tar xvf vendor-product-3.3.0-core.tar.gz "
+  },
+  {
+    "command": "cd vendor-product/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f 01-dependencies.sh.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd configs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./01-dependencies.sh "
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./02-install.py "
+  },
+  {
+    "command": "cd vendor-product/configs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv sc_preConfig.example sc_preConfig"
+  },
+  {
+    "command": "vi sc_preConfig "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f pre-installation.sh.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f global.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -lrt"
+  },
+  {
+    "command": "tail -300f 99-conditional-changes.sh.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -lrt"
+  },
+  {
+    "command": "tail -300f post-installation.sh.log "
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xvf vendor-product-3.3.1-patch.tar "
+  },
+  {
+    "command": "./update.sh "
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "wget http://domain/open/update-packages/vendor-product-3.3.1-patch.tar"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "wget http://domain/open/update-packages/vendor-product-3.3.2-patch.tar"
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xvf vendor-product-3.3.2-patch.tar "
+  },
+  {
+    "command": "./update.sh "
+  },
+  {
+    "command": "vi /etc/rc.local "
+  },
+  {
+    "command": "reboot now"
+  },
+  {
+    "command": "dd if=/dev/zero of=/zerofill.tmp bs=1048576; rm -fr /zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/ven01/zerofill.tmp bs=1048576; rm -fr /ven01/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/home/zerofill.tmp bs=1048576; rm -fr /home/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/var/zerofill.tmp bs=1048576; rm -fr /var/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/var/log/zerofill.tmp bs=1048576; rm -fr /var/log/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/var/log/audit/zerofill.tmp bs=1048576; rm -fr /var/log/audit/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/var/tmp/zerofill.tmp bs=1048576; rm -fr /var/tmp/zerofill.tmp"
+  },
+  {
+    "command": "dd if=/dev/zero of=/tmp/zerofill.tmp bs=1048576; rm -fr /tmp/zerofill.tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd static/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi /etc/rc.local "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "grep vers /ven01/netright-tomcat/netright/netright.properties "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.html "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd static/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "vi /etc/ssh/sshd_config "
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "wget http://domain/open/update-packages/vendor-product-3.4.0-update.tar"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/"
+  },
+  {
+    "command": "cd scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "passwd root"
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xvf vendor-product-3.4.0-update.tar "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./update.sh "
+  },
+  {
+    "command": "grep vers /ven01/netright-tomcat/netright/netright.properties "
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem && reboot now"
+  },
+  {
+    "command": "clear;clear;"
+  },
+  {
+    "command": "while IFS= read -r line; do     echo '[$line] will be removed...'    ; rm -fr $line    ; echo '[$line] is removed...'; done < <(ls -ltr /ven01/netright-tomcat/webapps/*.war | awk '{print $9}' | cut -d '.' -f 1)"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd auth-service/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd http-proxy/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mobile-api/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright-tomcat/logs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f *"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd components/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf org.eclipse.osgi/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f *.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd nssoapp/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd product-daemon/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sftp-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sql-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> application.log "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd superset/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> superset.log "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sym/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd uba-service/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "passwd root"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd RDPShare/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/lo"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -lrt"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /opt/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "echo 'home'"
+  },
+  {
+    "command": "dd if=/dev/zero of=/home/zerofill.tmp bs=1048576; rm -fr /home/zerofill.tmp"
+  },
+  {
+    "command": "cd /opt/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi zerofill.sj"
+  },
+  {
+    "command": "vi zerofill.sh"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chmod +x zerofill.sh "
+  },
+  {
+    "command": "vi zerofill.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chmod 777 zerofill.sh "
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "ps -ef | grep falsk"
+  },
+  {
+    "command": "ps -ef | grep flask"
+  },
+  {
+    "command": "kill -9 49010"
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "ps -ef | grep flask"
+  },
+  {
+    "command": "kill -9 51455"
+  },
+  {
+    "command": "cat /etc/rc.local"
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "ps -ef | grep flask"
+  },
+  {
+    "command": "kill 92777"
+  },
+  {
+    "command": "kill 92777 -9"
+  },
+  {
+    "command": "cat /etc/rc.local "
+  },
+  {
+    "command": "# run PAM boot strap script"
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "tail -100f SecureVendorSystem.log "
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm SecureVendorSystem"
+  },
+  {
+    "command": "rm SecureVendorSystem"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ls -ltr"
+  },
+  {
+    "command": "rm 1 -fr"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /etc/rc.local "
+  },
+  {
+    "command": "pws"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "> 1"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "> 1"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "tail -100f SecureVendorSystem.log "
+  },
+  {
+    "command": "ps -ef | grep flask"
+  },
+  {
+    "command": "kill -9 12990"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm SecureVendorSystem 1"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /etc/rc.local "
+  },
+  {
+    "command": "if ! [[ -f /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem ]]; then     systemctl stop product-auth; systemctl disable product-auth;     systemctl stop product-diag; systemctl disable product-diag;     systemctl stop product-gui; systemctl disable product-gui;     systemctl stop product-http; systemctl disable product-http;     systemctl stop product-mobile; systemctl disable product-mobile;     systemctl stop product-radius; systemctl disable product-radius;     systemctl stop product-rdpgw; systemctl disable product-rdpgw;     systemctl stop product-reporting; systemctl disable product-reporting;     systemctl stop product-sftp; systemctl disable product-sftp;     systemctl stop product-sql; systemctl disable product-sql;     systemctl stop product-ssh; systemctl disable product-ssh;     systemctl stop product-tacacs; systemctl disable product-tacacs;     systemctl stop product-uba; systemctl disable product-uba;     systemctl stop product-wdog; systemctl disable product-wdog;      set FLASK_APP=SecureVendorSystem;     set FLASK_ENV=prod;      export FLASK_APP=SecureVendorSystem;     export FLASK_ENV=prod;      echo '' > /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log;     cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/;      if [[ '$(dmidecode  | grep 'Manufacturer:' | grep VMware)' != '' ]]; then         echo 'Running on VMWare environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     elif [[ '$(dmidecode  | grep 'Manufacturer:' | grep Microsoft)' != '' ]]; then         echo 'Running on Microsoft environment...';         nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &     fi fi"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "cat 1"
+  },
+  {
+    "command": "netstat -nap | grep 443"
+  },
+  {
+    "command": "nohup /usr/local/bin/flask run --host 0.0.0.0 --port 443 --cert=/ven01/kron/db-certs/aioc.crt --key=/ven01/kron/db-certs/aioc.key 2>1 >> /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log &"
+  },
+  {
+    "command": "ps -ef | grep flask"
+  },
+  {
+    "command": "tail -100f SecureVendorSystem.log "
+  },
+  {
+    "command": "vi /ven01/netright-tomcat/netright/netright.properties "
+  },
+  {
+    "command": "tail -100f SecureVendorSystem.log "
+  },
+  {
+    "command": "nmtui"
+  },
+  {
+    "command": "vi /etc/ssh/sshd_config"
+  },
+  {
+    "command": "systemctl restart sshd"
+  },
+  {
+    "command": "systemctl restart NetworkManager"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem"
+  },
+  {
+    "command": "rm -rf 1 "
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ps -ef |grep kernel-"
+  },
+  {
+    "command": "rpm -qa |grep kernel-"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot now"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl status postgresql-11.service "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "cd /ven01/PostgreSQL11/data/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi postgresql.conf "
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "cd /ven01/PostgreSQL11/data/"
+  },
+  {
+    "command": "vi postgresql.conf "
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "vi /etc/raddb/sc_radiusd.conf "
+  },
+  {
+    "command":"timedatectl | grep 'Time zone:' | cut -d ':' -f2 - | xargs | cut -d ' ' -f 1"
+  },
+  {
+    "command": "sudo su"
+  },
+  {
+    "command":"timedatectl | grep 'Time zone:' | cut -d ':' -f2 - | xargs | cut -d ' ' -f 1"
+  },
+  {
+    "command": "timedatectl | grep 'Time zone:' | cut -d ':' -f2 - | xargs | cut -d ' ' -f 1"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-wdog.service"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem"
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "rm -rf 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat SecureVendorSystem.log "
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi /etc/rc.local "
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 "
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "timezonectl"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-auth.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-gui.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-mobile.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-rdpgw.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-sftp.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-ssh.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-uba.service"
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf"
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-diag.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-http.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-radius.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-reporting.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-sql.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-tacacs.service"
+  },
+  {
+    "command": "vi /usr/lib/systemd/system/product-wdog.service"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "grep -iRl 'GMT-140' /ven01/."
+  },
+  {
+    "command": "grep -iRl 'GMT-140' /usr/lib/systemd/system/."
+  },
+  {
+    "command": "grep -iRl 'GMT-140' /ven01/PostgreSQL11/data/"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot now"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "reboot now"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f SecureVendorSystem.log "
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-ssh.service "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "timedatectl set-timezone "
+  },
+  {
+    "command": "timedatectl set-timezone GMT-3"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "timedatectl set-timezone Etc/GMT-3"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "timedatectl | grep 'Time zone:' | cut -d ':' -f2 - | xargs | cut -d ' ' -f 1"
+  },
+  {
+    "command": "vi /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.py "
+  },
+  {
+    "command": "vi /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/SecureVendorSystem.log "
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "timedatectl set-timezone Etc/GMT-3"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f SecureVendorSystem.log "
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem 1 "
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -300f SecureVendorSystem.log "
+  },
+  {
+    "command": "vi SecureVendorSystem.log "
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf "
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl cat product-ssh.service "
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd co"
+  },
+  {
+    "command": "cd components/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf org.eclipse.osgi/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd webapps/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "clear;clear;"
+  },
+  {
+    "command": "while IFS= read -r line; do     echo '[$line] will be removed...'    ; rm -fr $line    ; echo '[$line] is removed...'; done < <(ls -ltr /ven01/netright-tomcat/webapps/*.war | awk '{print $9}' | cut -d '.' -f 1)"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd logs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd auth-service/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd http-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mobile-api/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd nssoapp/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -r f*"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd product-daemon/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sftp-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -r f*"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sql-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd superset/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf superset.log*"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sym/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd uba-service/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd watchdog/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi application.properties "
+  },
+  {
+    "command": ":q"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui.service "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "timedatectl"
+  },
+  {
+    "command": "systemctl cat product-gui"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd auth-service/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f application.log "
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd http-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f application.log "
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mobile-api/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f application.log "
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mobile-api/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright-tomcat/logs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf *"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd components/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf org.eclipse.osgi/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "clear;clear;"
+  },
+  {
+    "command": "while IFS= read -r line; do     echo '[$line] will be removed...'    ; rm -fr $line    ; echo '[$line] is removed...'; done < <(ls -ltr /ven01/netright-tomcat/webapps/*.war | awk '{print $9}' | cut -d '.' -f 1)"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd nssoapp/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd product-daemon/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sftp-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sql-proxy/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sql-proxy/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -f *"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 SecureVendorSystem"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd netright/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> sc-diagnostics.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /opt/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi /etc/rc.local "
+  },
+  {
+    "command": "cd /home/pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/SecureVendorSystem/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf 1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf SecureVendorSystem.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "> SecureVendorSystem.py "
+  },
+  {
+    "command": "vi SecureVendorSystem.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ot"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /opt/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/netright-tomcat/netright/scripts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -lrt"
+  },
+  {
+    "command": "cd /opt/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi os_clean.sh"
+  },
+  {
+    "command": "chmod +x os_clean.sh "
+  },
+  {
+    "command": "rpm -qa |grep kernel"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-4.18.0-477.15.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-modules-4.18.0-477.15.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-modules-4.18.0-477.13.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-core-4.18.0-477.13.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-modules-4.18.0-477.15.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -qa |grep kernel"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-core-4.18.0-477.15.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -e --nodeps kernel-4.18.0-477.13.1.el8_8.x86_64"
+  },
+  {
+    "command": "rpm -qa |grep kernel"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "ll /"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ifconfig"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "vi /etc/net"
+  },
+  {
+    "command": "vi /etc/networks "
+  },
+  {
+    "command": "vi /etc/netconfig "
+  },
+  {
+    "command": "nmtui"
+  },
+  {
+    "command": "hostnamctl"
+  },
+  {
+    "command": "hostnamectl"
+  },
+  {
+    "command": "ifconfig"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "nmtui"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "ifconfig"
+  },
+  {
+    "command": "cd /root/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd pamuser/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd scon/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /tmp"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /ven01/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "ss -lnt"
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/pg_hba.conf "
+  },
+  {
+    "command": "sudo systemctl restart postgresql-11.service "
+  },
+  {
+    "command": "sudo -u postgres psql -p 5444 -d aioc -c 'SELECT format('%I.%I(%s)', ns.nspname, p.proname, oidvectortypes(p.proargtypes))  850  FROM pg_proc p INNER JOIN pg_namespace ns ON (p.pronamespace = ns.oid)  851  WHERE ns.nspname = 'aioc';'"
+  },
+  {
+    "command": "tcpdump -i any port 49 -nn"
+  },
+  {
+    "command": "tcpdump -i any port 49 -nn"
+  },
+  {
+    "command": "systemctl status product-tacacs.service "
+  },
+  {
+    "command": "systemctl stop product-tacacs.service"
+  },
+  {
+    "command": "/ven01/kron/sbin/kron_tacacs -c /ven01/kron/etc/kron_tacacs.conf --secure-file /ven01/kron/security/security.properties -l 7 -d 3"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "systemctl status product-tacacs.service "
+  },
+  {
+    "command": "systemctl stop product-tacacs"
+  },
+  {
+    "command": "/ven01/kron/sbin/kron_tacacs -c /ven01/kron/etc/kron_tacacs.conf --secure-file /ven01/kron/security/security.properties -l 7 -d 3"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /ven01/sql-proxy/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/lib64/freerdp2"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/pamuser/libguacai-client.so ./"
+  },
+  {
+    "command": "vm ./libguacai-client.so ./libguacai-client.so_old"
+  },
+  {
+    "command": "mv ./libguacai-client.so ./libguacai-client.so_old"
+  },
+  {
+    "command": "cp /home/pamuser/libguacai-client.so ./"
+  },
+  {
+    "command": "chmod 755 ./libguacai-client.so"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "sudo reboot"
+  },
+  {
+    "command": "cd /ven01/nssoapp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano nsso.properties "
+  },
+  {
+    "command": "cd /ven01/nssoapp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano nsso.properties "
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "nano nsso.properties "
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "nano nsso.properties "
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "ks log"
+  },
+  {
+    "command": "tail -f /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "tail -f /ven01/nssoapp/log/application.log "
+  },
+  {
+    "command": "nano /ven01/nssoapp/conf/nsso.properties "
+  },
+  {
+    "command": "less /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "ps aux | grep pam"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "less /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "less /var/log/messages"
+  },
+  {
+    "command": "less /var/log/maillog"
+  },
+  {
+    "command": "ll /var/log/"
+  },
+  {
+    "command": "less /var/log/lastlog `"
+  },
+  {
+    "command": "less /var/log/lastlog "
+  },
+  {
+    "command": "less /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "less /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "find /ven01/ -name 'Vendor_prod_*'"
+  },
+  {
+    "command": "ks"
+  },
+  {
+    "command": "less /ven01/netright-tomcat/logs/catalina.out "
+  },
+  {
+    "command": "less /ven01/sql-proxy/log/application.log "
+  },
+  {
+    "command": "less /ven01/sql-proxy/log/application.log "
+  },
+  {
+    "command": "less /ven01/sql-proxy/log/application.log "
+  },
+  {
+    "command": "less /ven01/sql-proxy/log/application.log "
+  },
+  {
+    "command": "less /ven01/sql-proxy/log/application.log "
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "find /ven01/ -name '051f0262*'"
+  },
+  {
+    "command": "systemctl cat sc-diagnostics.target"
+  },
+  {
+    "command": "systemctl cat sc-diagnostics.timer"
+  },
+  {
+    "command": "tail -f /var/log/messages"
+  },
+  {
+    "command": "ll /home/"
+  },
+  {
+    "command": "touch /home/test1/somefile-download.txt"
+  },
+  {
+    "command": "chown test1 /home/test1/somefile-download.txt"
+  },
+  {
+    "command": "ll /home/test1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "touch somefile-upload.txt"
+  },
+  {
+    "command": "chown pamuser ./somefile-upload.txt "
+  },
+  {
+    "command": "cd /etc/raddb/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ./mods-available/"
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less ./sql"
+  },
+  {
+    "command": "cd ../mods-enabled/"
+  },
+  {
+    "command": "less sql "
+  },
+  {
+    "command": "less sql "
+  },
+  {
+    "command": "systemctl status product-radius.service "
+  },
+  {
+    "command": "sudo cat /usr/lib/systemd/system/product-radius.service"
+  },
+  {
+    "command": "less /usr/lib/systemd/system/product-radius.se"
+  },
+  {
+    "command": "vi /etc/raddb/sc_radiusd.conf "
+  },
+  {
+    "command": "sudo vi /etc/raddb/mods-available/ldap "
+  },
+  {
+    "command": "sudo vi /etc/raddb/mods-available/ldap "
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf "
+  },
+  {
+    "command": "sudo systemctl restart postgresql-11"
+  },
+  {
+    "command": "echo > /ven01/PostgreSQL11/data/log/postgresql-2024-04-12.log "
+  },
+  {
+    "command": "tail -f /ven01/PostgreSQL11/data/log/postgresql-2024-04-12.log"
+  },
+  {
+    "command": "echo > /ven01/PostgreSQL11/data/log/postgresql-2024-04-12.log "
+  },
+  {
+    "command": "cp /ven01/PostgreSQL11/data/log/postgresql-2024-04-12.log ./psql.log"
+  },
+  {
+    "command": "vi /ven01/PostgreSQL11/data/postgresql.conf "
+  },
+  {
+    "command": "sudo systemctl restart postgresql-11"
+  },
+  {
+    "command": "chown pamuser ./psql.log "
+  },
+  {
+    "command": "grep -rni /var/log/ -e 'GUI'"
+  },
+  {
+    "command": "mkdir -p /usr/local/lib/nodejs/"
+  },
+  {
+    "command": "chown pamuser:product-group /usr/local/lib/nodejs/ -fR"
+  },
+  {
+    "command": "tar -xf node-v20.10.0-linux-x64.tar.xz -C /usr/local/lib/nodejs/"
+  },
+  {
+    "command": " rm /usr/local/bin/node -fr"
+  },
+  {
+    "command": "rm /usr/local/bin/npm -fr"
+  },
+  {
+    "command": "rm /bin/node -fr"
+  },
+  {
+    "command": "ln -fs /usr/local/lib/nodejs/node-v20.10.0-linux-x64/bin/node /usr/local/bin/node"
+  },
+  {
+    "command": "ln -fs /usr/local/lib/nodejs/node-v20.10.0-linux-x64/bin/node /bin/node"
+  },
+  {
+    "command": "ln -fs /usr/local/lib/nodejs/node-v20.10.0-linux-x64/bin/npm  /usr/local/bin/npm"
+  },
+  {
+    "command": "echo  '  NodeJS Version: $(node -v | xargs)'"
+  },
+  {
+    "command": "echo '  NPM Version: $(npm -v | xargs)'"
+  },
+  {
+    "command": "systemctl restart product-gui"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "history > history.txt"
+  }
+]
