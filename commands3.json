@@ -729,7 +729,7 @@
     "command": "hostnamectl --help"
   },
   {
-    "command": "hostnamectl set-hostname mx.m-uni.ru"
+    "command": "hostnamectl set-hostname mx.domain.tld"
   },
   {
     "command": "hostname"
@@ -777,7 +777,7 @@
     "command": "telnet gmail-smtp-in.l.google.com 25"
   },
   {
-    "command": "echo 'test email' | sendmail '1@m-uni.ru'"
+    "command": "echo 'test email' | sendmail '1@domain.tld'"
   },
   {
     "command": "postconf | grep 'myorigin'"
@@ -792,7 +792,7 @@
     "command": "vi /etc/mailname "
   },
   {
-    "command": "echo 'test email' | sendmail '1@m-uni.ru'"
+    "command": "echo 'test email' | sendmail '1@domain.tld'"
   },
   {
     "command": "postconf mail_spool_directory"
@@ -936,10 +936,10 @@
     "command": "cat owncloud-le-ssl.conf "
   },
   {
-    "command": "cp owncloud-le-ssl.conf mx_m-uni_ru.conf"
+    "command": "cp owncloud-le-ssl.conf mx_domain_tld.conf"
   },
   {
-    "command": "nano mx_m-uni_ru.conf "
+    "command": "nano mx_domain_tld.conf "
   },
   {
     "command": "cd /var/www"
@@ -948,10 +948,10 @@
     "command": "ll"
   },
   {
-    "command": "mkdir mx_m-uni_ru"
+    "command": "mkdir mx_domain_tld"
   },
   {
-    "command": "cd mx_m-uni_ru/"
+    "command": "cd mx_domain_tld/"
   },
   {
     "command": "nano index.html"
@@ -972,7 +972,7 @@
     "command": "ll"
   },
   {
-    "command": "vi mx_m-uni_ru.conf "
+    "command": "vi mx_domain_tld.conf "
   },
   {
     "command": "a2ensite"
@@ -1053,7 +1053,7 @@
     "command": "apt install -y certbot"
   },
   {
-    "command": "certbot certonly --manual --preferred-challenges dns -d m-uni.ru"
+    "command": "certbot certonly --manual --preferred-challenges dns -d domain.tld"
   },
   {
     "command": "apt list"
@@ -1107,7 +1107,7 @@
     "command": "ll"
   },
   {
-    "command": "mkdir -p /home/mail/vhosts/m-uni.ru"
+    "command": "mkdir -p /home/mail/vhosts/domain.tld"
   },
   {
     "command": "ll"
@@ -1182,7 +1182,7 @@
     "command": "apt install -y opendkim opendkim-tools"
   },
   {
-    "command": "DOMAIN=m-uni.ru"
+    "command": "DOMAIN=domain.tld"
   },
   {
     "command": "nano /etc/opendkim.conf "
@@ -1311,7 +1311,7 @@
     "command": "ll"
   },
   {
-    "command": "cd mx_m-uni_ru/"
+    "command": "cd mx_domain_tld/"
   },
   {
     "command": "ll"
@@ -1326,10 +1326,10 @@
     "command": "ll"
   },
   {
-    "command": "mv roundcubemail-1.6.5 /var/www/mx_m-uni_ru/"
+    "command": "mv roundcubemail-1.6.5 /var/www/mx_domain_tld/"
   },
   {
-    "command": "cd /var/www/mx_m-uni_ru/"
+    "command": "cd /var/www/mx_domain_tld/"
   },
   {
     "command": "ll"
@@ -1395,10 +1395,10 @@
     "command": "mysql -u root"
   },
   {
-    "command": "mysql roundcube < /var/www/mx_m-uni_ru/SQL/mysql.initial.sql "
+    "command": "mysql roundcube < /var/www/mx_domain_tld/SQL/mysql.initial.sql "
   },
   {
-    "command": "mysql roundcubemail < /var/www/mx_m-uni_ru/SQL/mysql.initial.sql "
+    "command": "mysql roundcubemail < /var/www/mx_domain_tld/SQL/mysql.initial.sql "
   },
   {
     "command": "cd /etc/apache2/sites-available/"
@@ -1407,7 +1407,7 @@
     "command": "ll"
   },
   {
-    "command": "nano mx_m-uni_ru.conf "
+    "command": "nano mx_domain_tld.conf "
   },
   {
     "command": "a2ensite"
@@ -1425,7 +1425,7 @@
     "command": "ll"
   },
   {
-    "command": "nano mx_m-uni_ru.conf "
+    "command": "nano mx_domain_tld.conf "
   },
   {
     "command": "certbot --apache"
@@ -1440,7 +1440,7 @@
     "command": "certbot --help"
   },
   {
-    "command": "nano mx_m-uni_ru.conf "
+    "command": "nano mx_domain_tld.conf "
   },
   {
     "command": "systemctl reload apache2"
@@ -1458,7 +1458,7 @@
     "command": "apt-get install php-imagick"
   },
   {
-    "command": "cd /var/www/mx_m-uni_ru/"
+    "command": "cd /var/www/mx_domain_tld/"
   },
   {
     "command": "ll"
@@ -1584,7 +1584,7 @@
     "command": "ll"
   },
   {
-    "command": "nano mx_m-uni_ru.conf "
+    "command": "nano mx_domain_tld.conf "
   },
   {
     "command": "nano owncloud.conf "
@@ -1638,7 +1638,7 @@
     "command": "ll"
   },
   {
-    "command": "cd m-uni.ru/"
+    "command": "cd domain.tld/"
   },
   {
     "command": "ll"
@@ -1656,22 +1656,13 @@
     "command": "md5sum"
   },
   {
-    "command": "md5sum gv5rNgUzVqJwSJeqtYSN"
-  },
-  {
     "command": "md5sum.textutils --help"
-  },
-  {
-    "command": "echo -n gv5rNgUzVqJwSJeqtYSN | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
     "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext "
-  },
-  {
-    "command": "echo -n Q4Knwhy67wmFVfxpNOgl | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -1728,25 +1719,13 @@
     "command": "nano /etc/dovecot/conf.d/auth-passwdfile.conf.ext"
   },
   {
-    "command": "echo -n p9FAcKAMPKbCa4Nb4QXR | md5sum"
+    "command": "nano /etc/dovecot/dovecot-users"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users"
   },
   {
-    "command": "echo -n nZtH9IQqYyLTBSWLekux | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users"
-  },
-  {
-    "command": "echo -n WoFeCGL99LshqXkuwts6 | md5sum"
-  },
-  {
-    "command": "nano /etc/dovecot/dovecot-users"
-  },
-  {
-    "command": "echo -n MxeF4UhpuYW838H4XJHa | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users"
@@ -1770,7 +1749,7 @@
     "command": "ll"
   },
   {
-    "command": "cd mx.m-uni.ru/"
+    "command": "cd mx.domain.tld/"
   },
   {
     "command": "ll"
@@ -2100,10 +2079,10 @@
     "command": "less /var/log/mail.err"
   },
   {
-    "command": "/usr/sbin/sendmail -bv db@m-uni.ru"
+    "command": "/usr/sbin/sendmail -bv 1@domain.tld"
   },
   {
-    "command": "/usr/sbin/sendmail -v db@m-uni.ru"
+    "command": "/usr/sbin/sendmail -v 1@domain.tld"
   },
   {
     "command": "nano master.cf"
@@ -2121,7 +2100,7 @@
     "command": "postfix reload"
   },
   {
-    "command": "postmap -q 'db@m-uni.ru' hash:/etc/postfix/canonical"
+    "command": "postmap -q '1@domain.tld' hash:/etc/postfix/canonical"
   },
   {
     "command": "nano main.cf"
@@ -2172,7 +2151,7 @@
     "command": "ll"
   },
   {
-    "command": "cd m-uni.ru/"
+    "command": "cd domain.tld/"
   },
   {
     "command": "ll"
@@ -2244,9 +2223,6 @@
     "command": "history"
   },
   {
-    "command": "echo -n wXsp217KI35tWYpNphBm | md5sum"
-  },
-  {
     "command": "nano dovecot-users"
   },
   {
@@ -2262,9 +2238,6 @@
     "command": "ll"
   },
   {
-    "command": "echo -n HXupxz8FWuJZyJcK0kaj | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
@@ -2286,7 +2259,22 @@
     "command": "less /var/log/mail.log"
   },
   {
-    "command": "echo -n jpml1O8GozeeWQrLx3GZ | md5sum"
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "postfix reload"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -2307,9 +2295,6 @@
     "command": "postfix reload"
   },
   {
-    "command": "echo -n 2GD3AGHr1Rvhg96vqaK9 | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
@@ -2328,34 +2313,7 @@
     "command": "postfix reload"
   },
   {
-    "command": "echo -n zcYdKnfPS0L3GkRzRwTD | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
-  },
-  {
-    "command": "nano canonical"
-  },
-  {
-    "command": "postmap ./canonical"
-  },
-  {
-    "command": "nano aliases"
-  },
-  {
-    "command": "postmap ./aliases"
-  },
-  {
-    "command": "postfix reload"
-  },
-  {
-    "command": "echo -n URD5fFFb6Om6AZwGlWmY | md5sum"
-  },
-  {
-    "command": "nano /etc/dovecot/dovecot-users "
-  },
-  {
-    "command": "echo -n 92gjrIxGhQxV0iK7w1kO | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -2391,9 +2349,6 @@
     "command": "postfix reload"
   },
   {
-    "command": "echo -n X5a5SmO8bbucI3LJBgVd | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
@@ -2416,9 +2371,6 @@
   },
   {
     "command": "postfix reload"
-  },
-  {
-    "command": "echo -n C9hyZzkcY6nC1IDJsMVj | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -2496,7 +2448,28 @@
     "command": "less /var/log/mail.log"
   },
   {
-    "command": "echo -n 7GBHirCNEQuDVAToNl3K | md5sum"
+    "command": "nano /etc/dovecot/dovecot-users "
+  },
+  {
+    "command": "nano canonical"
+  },
+  {
+    "command": "postmap ./canonical"
+  },
+  {
+    "command": "nano aliases"
+  },
+  {
+    "command": "postmap ./aliases"
+  },
+  {
+    "command": "nano virtual"
+  },
+  {
+    "command": "postmap ./virtual"
+  },
+  {
+    "command": "postfix reload"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -2523,9 +2496,6 @@
     "command": "postfix reload"
   },
   {
-    "command": "echo -n IKzX9w5jqpx5N2YoWNYJ | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
@@ -2550,9 +2520,6 @@
     "command": "postfix reload"
   },
   {
-    "command": "echo -n QyyRcaESFf7gPpsvcDFX | md5sum"
-  },
-  {
     "command": "nano /etc/dovecot/dovecot-users "
   },
   {
@@ -2575,36 +2542,6 @@
   },
   {
     "command": "postfix reload"
-  },
-  {
-    "command": "echo -n DIJoZwp0qkdsEhNOAi7a | md5sum"
-  },
-  {
-    "command": "nano /etc/dovecot/dovecot-users "
-  },
-  {
-    "command": "nano canonical"
-  },
-  {
-    "command": "postmap ./canonical"
-  },
-  {
-    "command": "nano aliases"
-  },
-  {
-    "command": "postmap ./aliases"
-  },
-  {
-    "command": "nano virtual"
-  },
-  {
-    "command": "postmap ./virtual"
-  },
-  {
-    "command": "postfix reload"
-  },
-  {
-    "command": "echo -n 4INi76CRm9HFHLYa3Os8 | md5sum"
   },
   {
     "command": "nano /etc/dovecot/dovecot-users "
@@ -2634,7 +2571,7 @@
     "command": "ll"
   },
   {
-    "command": "certbot certonly --manual --preferred-challenges dns -d m-uni.ru"
+    "command": "certbot certonly --manual --preferred-challenges dns -d domain.tld"
   },
   {
     "command": "certbot certonly --manual"
@@ -2970,7 +2907,7 @@
     "command": "doveadm fts rescan -u db"
   },
   {
-    "command": "doveadm fts rescan -u db@m-uni.ru"
+    "command": "doveadm fts rescan -u 1@domain.tld"
   },
   {
     "command": "doveadm ?"
