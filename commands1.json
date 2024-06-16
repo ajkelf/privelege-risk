@@ -1,0 +1,1502 @@
+[
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd postmaster/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "ls ./ -l"
+  },
+  {
+    "command": "ls -l ./*"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /var"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd www/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd domain_email/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd data/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd email/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd domain.tld/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd reg/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .Junk/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd cur/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command":"less 1691125873.M546594P31959.domain.tld,S=147631,W=150689:2,S "
+  },
+  {
+    "command": "rm 1691*"
+  },
+  {
+    "command": "rm 1692*"
+  },
+  {
+    "command": "rm 169*"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd sm/"
+  },
+  {
+    "command": "cd .maildir/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd pk/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd info/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd may/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd smbd/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd prsn/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd //"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "cd os/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd postmaster/.maildir/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "cd root/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "echo '' > btmp.1 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "echo '' > auth.log.1 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.log.*.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm mail.*.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "echo '' > *.1"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "echo '' > mail.info.1 "
+  },
+  {
+    "command": "echo '' > mail.log.1 "
+  },
+  {
+    "command": "echo '' > syslog.1 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less auth.log"
+  },
+  {
+    "command": "less mail.log"
+  },
+  {
+    "command": "cd apache2/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd apt"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd dbconfig-common/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd dirmngr/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd exim4/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "echo '' >mainlog.1 "
+  },
+  {
+    "command": "echo '' > rejectlog.1 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less mainlog"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd mysql"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd nginx/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd proftpd/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less proftpd.log"
+  },
+  {
+    "command": "netstat -nvL"
+  },
+  {
+    "command": "iptables -nvL"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd roundcube/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm *.gz"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd lib/mysql/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd mysql"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd roundcube/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd backups/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd domain_email/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd root/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "rm -rf ./2023-11*"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "doveadm --help"
+  },
+  {
+    "command": "doveadm -?"
+  },
+  {
+    "command": "doveadm -v"
+  },
+  {
+    "command": "doveadm help"
+  },
+  {
+    "command": "doveadm search -A mailbox 'Trash' | awk '{print $1}' | sort | uniq -c"
+  },
+  {
+    "command": "doveadm search -A mailbox 'INBOX' savedbefore 360d | awk '{print $1} | sort | uniq -c"
+  },
+  {
+    "command": "doveadm search -A mailbox 'INBOX' savedbefore 360d | awk '{print $1}' | sort | uniq -c"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "echo '' > auth.log"
+  },
+  {
+    "command": "echo '' > btmp"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df =h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd /etc/exim4/conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat router/600_exim4-config_userforward "
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /var/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd www/domain_email/data/email/domain.tld/1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .maildir/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/1/.maildir/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "exim4 -brw 1@domain.tld"
+  },
+  {
+    "command": "exim -brw 1@domain.tld"
+  },
+  {
+    "command": "cd /etc/exim4/conf.d/router/200_exim4-config_primary "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/router/200_exim4-config_primary "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/router/00_exim4-config_header "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/router/100_exim4-config_domain_literal "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/rewrite/31_exim4-config_rewriting "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/router/900_exim4-config_local_user "
+  },
+  {
+    "command": "less /etc/exim4/conf.d/router/600_exim4-config_userforward "
+  },
+  {
+    "command": "cd /etc/exim4/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less exim4.conf.template "
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd router/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat 00_exim4-config_header "
+  },
+  {
+    "command": "cat 200_exim4-config_primary "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "nano 50_exim4-config_relay"
+  },
+  {
+    "command": "ps aux | grep exim4"
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "mv 50_exim4-config_relay 01_exim4-config_relay"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "rm 01_exim4-config_relay "
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "systemctl status exim4"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less 400_exim4-config_system_aliases "
+  },
+  {
+    "command": "less 800_exim4-config_maildrop "
+  },
+  {
+    "command": "less 900_exim4-config_local_user "
+  },
+  {
+    "command": "less mmm_mail4root "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd transport/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less 00_exim4-config_header "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd main/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less 02_exim4-config_options "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd router/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "exim4 -brw 1@domain.tld"
+  },
+  {
+    "command": "exim4 -br 1@domain.tld"
+  },
+  {
+    "command": "exim --help"
+  },
+  {
+    "command": "man exim4"
+  },
+  {
+    "command": "grep -inr 'procmail' ./*"
+  },
+  {
+    "command": "nano 999_exim4-config_relay"
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "systemctl status exim4"
+  },
+  {
+    "command": "exim4 -bt 1@domain.tld"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less 700_exim4-config_procmail "
+  },
+  {
+    "command": "less 700_exim4-config_procmail "
+  },
+  {
+    "command": "grep -inr 'dovecot_deliver_pipe' ./*"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "grep -inr 'dovecot_deliver_pipe' ./*"
+  },
+  {
+    "command": "grep -inr 'dovecot_deliver_pipe' ./transport/*"
+  },
+  {
+    "command": "exim4 -bt 1@domain.tld -f smthn@gmail.com"
+  },
+  {
+    "command": "exim4 -f smthn@gmail.com -bt 1@domain.tld"
+  },
+  {
+    "command": "cd router/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm 999_exim4-config_relay "
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "systemctl status exim4"
+  },
+  {
+    "command": "less /var/log/exim4/mainlog"
+  },
+  {
+    "command": "less /var/log/exim4/mainlog"
+  },
+  {
+    "command": "less /var/log/exim4/rejectlog"
+  },
+  {
+    "command": "less /var/log/exim4/paniclog "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/log/exim4/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less paniclog "
+  },
+  {
+    "command": "echo '' > paniclog "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "exim4 -bt 1@domain.tld"
+  },
+  {
+    "command": "man exim4"
+  },
+  {
+    "command": "less /var/log/exim4/mainlog"
+  },
+  {
+    "command": "cd /etc/exim4/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat aliases "
+  },
+  {
+    "command": "cat blacklist "
+  },
+  {
+    "command": "cat domainips "
+  },
+  {
+    "command": "cat domains "
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd router/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat mmm_mail4root "
+  },
+  {
+    "command": "nano  00_exim4-config_header "
+  },
+  {
+    "command": "nano  00_exim4-config_header "
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "nano  00_exim4-config_header "
+  },
+  {
+    "command": "systemctl restart exim4"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less passwd"
+  },
+  {
+    "command": "less passwd.client "
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "less /var/log/mail.info"
+  },
+  {
+    "command": "less /var/log/exim4/mainlog"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat aliases "
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "history | grep du"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/mail.info"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "telnet 89.175.46.12 25"
+  },
+  {
+    "command": "telnet smtp.gmail.com 25"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cat /etc/bind/named.conf"
+  },
+  {
+    "command": "cat /etc/bind/domain.tld "
+  },
+  {
+    "command": "systemctl status bind"
+  },
+  {
+    "command": "service bind status"
+  },
+  {
+    "command": "less /var/log/dmesg "
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "less /var/log/lastlog "
+  },
+  {
+    "command": "less /var/log/auth.log"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls"
+  },
+  {
+    "command": "cd o.stavitskaya/"
+  },
+  {
+    "command": "ls"
+  },
+  {
+    "command": "cd .maildir/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd cur/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd new/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command":"less 1714217407.M416953P25778.domain.tld,S=9393,W=9533 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command":"less 1714217661.M908426P26031.domain.tld,S=9502,W=9648 "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat /etc/exim4/aliases "
+  },
+  {
+    "command": "bind"
+  },
+  {
+    "command": "bind9-config "
+  },
+  {
+    "command": "netstat -tulpn"
+  },
+  {
+    "command": "cat /etc/resolv.conf "
+  },
+  {
+    "command": "less /etc/insserv.conf"
+  },
+  {
+    "command": "find -name 'named.conf' /etc/*"
+  },
+  {
+    "command": "find /etc/* -name 'named.conf'"
+  },
+  {
+    "command": "less /etc/bind/named.conf"
+  },
+  {
+    "command": "cd /etc/bind"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat named.conf"
+  },
+  {
+    "command": "cd domain.tld "
+  },
+  {
+    "command": "cd ./domain.tld/"
+  },
+  {
+    "command": "cat domain.tld "
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "cat /var/log/mail.log | grep 'sm@domain.tld' | less"
+  },
+  {
+    "command": "sudo su"
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less dovecot.passwd "
+  },
+  {
+    "command": "less dovecot.passwd "
+  },
+  {
+    "command": "cp dovecot.passwd dovecot.p-old"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "nano dovecot.passwd "
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat dovecot.p-old "
+  },
+  {
+    "command": "cat dovecot.passwd "
+  },
+  {
+    "command": "less /etc/dovecot/dovecot.passwd "
+  },
+  {
+    "command": "cd /etc/exim4/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cat aliases "
+  },
+  {
+    "command": "less /var/log/mail.log"
+  },
+  {
+    "command": "less /var/log/mail.err"
+  },
+  {
+    "command": "less /var/log/mail.warn"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/ib/.maildir/new/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command":"cat 1715979160.M638242P22161.domain.tld,S=4712,W=4776 "
+  },
+  {
+    "command": "cd /var/log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "less mail.log"
+  },
+  {
+    "command": "less messages"
+  },
+  {
+    "command": "sudo su"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd domain.tld/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "history | grep du"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd mail/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd .maildir/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd new/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command":"less 1715934838.M43393P23289.domain.tld,S=19252,W=19606 "
+  },
+  {
+    "command":"less 1715862083.M580386P27397.domain.tld,S=11670,W=11912 "
+  },
+  {
+    "command":"less 1715836015.M618438P12232.domain.tld,S=7338,W=7470 "
+  },
+  {
+    "command": "cd /etc/dovecot/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cp dovecot.passwd dovecot.p-old2"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "nano dovecot.passwd "
+  },
+  {
+    "command": "cd /var/www/domain_email/data/email/domain.tld/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cat /proc/cpuinfo "
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "cat /proc/meminfo "
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "history > history.txt"
+  }
+]

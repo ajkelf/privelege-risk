@@ -8,6 +8,62 @@ def init_list_of_objects(size):
     return list_of_objects
 
 
+def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
+  cmd_for_analyze = str(cmd)
+  print(f"======\nCommand for analyze: {cmd_for_analyze}")
+
+  D = 0
+
+  i = 0
+  for mat in _MAT:
+    i = i + 1
+
+    ME = 0
+    MP = 0
+
+    S = 0
+    F = 1
+
+    #print(mat)
+    for mat_cmd in mat:
+      cmd_to_compare = mat_cmd["command"]
+      #print("compare with: " + cmd_to_compare)
+
+      cmd_conjuct = 0
+
+      if cmd_for_analyze == cmd_to_compare:
+        print(f"  compare with: {cmd_to_compare}")
+        print(f"    exact match, MAT={_MATnames[i-1]}")
+        cmd_conjuct = 1
+        ME = 1
+
+      if cmd_to_compare not in ["^","+","..","$"]:
+        if re.search(cmd_to_compare, cmd_for_analyze):
+          print(f"  compare with: {cmd_to_compare}")
+          print(f"    regex pattern match, MAT={_MATnames[i-1]}")
+          cmd_conjuct = 1
+          MP = 1
+
+      if cmd_conjuct == 1:
+        if not cmd_to_compare in _A[i-1]:
+          #_A[i-1].index(cmd_to_compare)
+          #_A[i-1].append(cmd_for_analyze)
+          _A[i-1].append(cmd_to_compare)
+
+    if len(_A[i-1])>0:
+      S = len(_A[i-1])
+      
+    if len(_A[i-1]) == len(_MAT[i-1]):
+      F = 2
+
+    D = D + (ME + MP)*S*F
+  print(f"D(cmd) = {D}")
+
+  return D
+#=======def calculate_d_command()
+
+
+#======main
 
 with open('techniques.json', 'r') as techniques_file:
   techniques_data = techniques_file.read()
@@ -18,70 +74,24 @@ print(f"N = {_N}, number of techniques to be used")
 
 _MAT = init_list_of_objects(_N) #techniques with commands as elements, number of MAT is N
 _A = init_list_of_objects(_N) #arrays for storage commands which equals exactly or by pattern with _MAT commands
+_MATnames = list(range(_N))
 
 i = 0
 for technique in techniques_objects:
   i = i + 1
-#  print(f"{i}. {technique['id']}")
+  _MATnames[i-1] = technique['id']
   commands = []
   for command in technique['commands']:
     commands.append(command)
-#    print(command)
-
   _MAT[i-1] = commands
 
-#print("MATid arrays assigned:")
-#print(_MAT)
-
 #source commands
-CL1 = []
-CL1.append(["du -h --max-depth=1 | sort -hr",0])
-CL1.append(["cd postmaster/",0])
-CL1.append(["ls -l",0])
+with open('commands1.json', 'r') as commands1_file:
+  commands1_data = commands1_file.read()
 
-CL2 = []
-CL2.append(["passwd root",0])
-CL2.append(["vi /etc/ssh/sshd_config ",0])
-CL2.append(["systemctl restart sshd",0])
+commands1_objects = json.loads(commands1_data)
+print(f"Commands #1 list number of commands = {len(commands1_objects)}")
 
-for cmd in CL1:
-  print("Command for analyze:")
-  cmd_for_analyze = cmd[0]
-  print(cmd_for_analyze)
-
-  i = 0
-  for mat in _MAT:
-    i = i + 1
-
-    ME = 0
-    MP = 0
-
-    #print(mat)
-    for mat_cmd in mat:
-      cmd_to_compare = mat_cmd["command"]
-      #print("compare with: " + cmd_to_compare)
-
-      cmd_conjuct = 0
-
-      if cmd_for_analyze == cmd_to_compare:
-        print("compare with: " + cmd_to_compare)
-        print("exact match")
-        cmd_conjuct = 1
-        ME = ME + 1
-
-      if cmd_to_compare not in ["^","+","..","$"]:
-        if re.search(cmd_to_compare, cmd_for_analyze):
-          print("compare with: " + cmd_to_compare)
-          print("regex pattern match")
-          cmd_conjuct = 1
-          MP = MP + 1
-
-      if cmd_conjuct == 1:
-        _A[i-1].append(cmd_for_analyze)
-
-    if _A[i-1]:
-      print(f"A[{i-1}]={_A[i-1]}")
-    if ME>0 or MP>0:
-      print(f"ME(id={i-1})={ME}, MP(id={i-1})={MP}")
-
-#print(_A)
+for cmd1 in commands1_objects:
+  Dcmd = calculate_d_command(cmd1["command"], _MAT, _A, _MATnames)
+  print(f"Dcmd = {Dcmd}")
