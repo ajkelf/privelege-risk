@@ -1,0 +1,2996 @@
+[
+  {
+    "command": "cd wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv advanced-cache.php advanced-cache.php-old"
+  },
+  {
+    "command": "mv db.php db.php-old"
+  },
+  {
+    "command": "mv object-cache.php object-cache.php-old"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/projects/domain1_tld_www/wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mv advanced-cache.php advanced-cache.php-old"
+  },
+  {
+    "command": "mv db.php db.php-old"
+  },
+  {
+    "command": "mv object-cache.php object-cache.php-old"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "dig -x 37.139.41.105 +short"
+  },
+  {
+    "command": "dig -x 31.31.201.113 +short"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command": "tail -f /usr/share/projects/tld_domain3/coin.log "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd clouddisk/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm *202212*.sql"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm *202212*.tar.gz"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "cloud-disk status"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi coins-get.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less get-coin-price.php "
+  },
+  {
+    "command": "python3 ./coins-get.py 'https://domain4_tld/coin/andorra-1-euro-2016/?cid=62914'"
+  },
+  {
+    "command": "vi coins-get.py "
+  },
+  {
+    "command": "python3 ./coins-get.py 'https://domain4_tld/coin/andorra-1-euro-2016/?cid=62914'"
+  },
+  {
+    "command": "tail -f ./coin.log "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /etc/apache2/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less tld_domain5.conf "
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f investing.log "
+  },
+  {
+    "command": "systemctl restart apache2"
+  },
+  {
+    "command": "less /var/log/apache2/error"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f investing.log "
+  },
+  {
+    "command": "less get-investing-price.php "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/coty-inc"
+  },
+  {
+    "command": "'"
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/coty-inc'"
+  },
+  {
+    "command": "tail -f investing.log "
+  },
+  {
+    "command": "mysql"
+  },
+  {
+    "command": "mysql -u root"
+  },
+  {
+    "command": "cat /root/default_passwords.txt"
+  },
+  {
+    "command": "mysql -u root -p he20Ncdcah3"
+  },
+  {
+    "command": "mysql -u root -phe20Ncdcah3"
+  },
+  {
+    "command": "git"
+  },
+  {
+    "command": "apt-get install git"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less investing.log "
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "less /var/log/apache2/access.log"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd InMo/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "co get-investing-price.php /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "cp get-investing-price.php /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp get-investing-price.php /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chmod +x scheduled-run.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "pip install MySQLdb"
+  },
+  {
+    "command": "pip3.5 install MySQLdb"
+  },
+  {
+    "command": "pip3 install MySQLdb"
+  },
+  {
+    "command": "python3 verson"
+  },
+  {
+    "command": "python3 version"
+  },
+  {
+    "command": "python3 --version"
+  },
+  {
+    "command": "pip3 install pymysql"
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "cp /home/joseph/InMo/scheduled-run.py ./"
+  },
+  {
+    "command": "python3 ./scheduled-run.py "
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py "
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py > /dev/null"
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py "
+  },
+  {
+    "command": "cd InMo/"
+  },
+  {
+    "command": "cp scheduled-run.py /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py "
+  },
+  {
+    "command": "cp get-investing-price.php /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py "
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "python3 /usr/share/projects/tld_domain2/scheduled-run.py > /usr/share/projects/tld_domain2/scheduled-run.log"
+  },
+  {
+    "command": "cat /usr/share/projects/tld_domain2/scheduled-run.log"
+  },
+  {
+    "command": "cat /usr/share/projects/tld_domain2/scheduled-run."
+  },
+  {
+    "command": "cat /usr/share/projects/tld_domain2/scheduled-run.log "
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1_tld_www/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data -R ./plugins/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "chown www-data:www-data -R ./wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "chown www-data:www-data -R ./domain1_tld_www/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown root:root -R ./domain1_tld_www/"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less investing.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less scheduled-run.log "
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less investing.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company' > ee.html"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi investing-get.py "
+  },
+  {
+    "command": "python3 ./investing-get.py 'https://domain6_tld/equities/some-company'"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "systemctl restart apache2"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "cd /etc/letsencrypt/renewal/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm domain7_tld.conf "
+  },
+  {
+    "command": "rm domain8_tld.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat domain9_tld.conf "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/clouddisk/backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /root/default_passwords.txt "
+  },
+  {
+    "command": "cd /root/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "echo '' > default_passwords.txt "
+  },
+  {
+    "command": "cat /root/default_passwords.txt "
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less error.log"
+  },
+  {
+    "command": "less error_domain9.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm vendor-import-services.php "
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-import_v2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-import-presslist.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi .htaccess "
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "vi .htaccess "
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "ip ?"
+  },
+  {
+    "command": "ip --help"
+  },
+  {
+    "command": "ip address"
+  },
+  {
+    "command": "uname -a"
+  },
+  {
+    "command": "ps"
+  },
+  {
+    "command": "ps aux"
+  },
+  {
+    "command": "netstat"
+  },
+  {
+    "command": "netstat -nvL"
+  },
+  {
+    "command": "netstat -nvl"
+  },
+  {
+    "command": "cat /etc/group"
+  },
+  {
+    "command": "cat /etc/shadow"
+  },
+  {
+    "command": "ls -l /home"
+  },
+  {
+    "command": "getent passwd"
+  },
+  {
+    "command": "cat /etc/login.defs"
+  },
+  {
+    "command": "ll /etc"
+  },
+  {
+    "command": "ufw status"
+  },
+  {
+    "command": "iptables -nvL"
+  },
+  {
+    "command": "apt --help"
+  },
+  {
+    "command": "shutdown --help"
+  },
+  {
+    "command": "kk"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain9_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -r ./tld_domain5/ /home/joseph/"
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less server_backup.sh "
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar cvf domain9_20240202.tar.gz ./tld_domain5/"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd plugins_dev/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -r ./vendor-smscontacts/ /usr/share/projects/tld_domain5/wp-content/plugins/"
+  },
+  {
+    "command": "ll /usr/share/projects/tld_domain5/wp-content/plugins/"
+  },
+  {
+    "command": "chown www-data:www-data ./vendor-smscontacts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -r www-data:www-data ./vendor-smscontacts/"
+  },
+  {
+    "command": "chown www-data:www-data -r ./vendor-smscontacts/"
+  },
+  {
+    "command": "chown www-data:www-data -R ./vendor-smscontacts/"
+  },
+  {
+    "command": "c"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown joseph:joseph -R ./vendor-smscontacts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-smscontacts/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp send.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp send.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "free -m"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/joseph/plugins_dev/vendor-smscontacts/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp send.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain10/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd smsrobot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less log.txt "
+  },
+  {
+    "command": "cd /home/joseph/plugins_dev/vendor-smscontacts/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp send.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cp send.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "less /var/log/apache2/error"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "less /var/log/apache2/access_domain9.log"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /etc/apache2/sites-enabled/tld_domain10.conf "
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain10/smsrobot/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less send.php "
+  },
+  {
+    "command": "less log.txt "
+  },
+  {
+    "command": "date"
+  },
+  {
+    "command": "less send.php "
+  },
+  {
+    "command": "cd tld_domain5_dev/assets/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cp -r ./assets/ /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "lll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chmod www-data:www-data -R ./assets/"
+  },
+  {
+    "command": "chown www-data:www-data -R ./assets/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-content/uploads"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/wp-content/themes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd storefront/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "grep -inr 'Storefront' ./*"
+  },
+  {
+    "command": "grep -inr ' Storefront' ./*.php"
+  },
+  {
+    "command": "grep -inr 'storefront_credit' ./*.php"
+  },
+  {
+    "command": "grep -inr 'storefront_credit' ./*."
+  },
+  {
+    "command": "grep -inr 'storefront_credit' ./*"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "grep -inr 'storefront_footer' ./*."
+  },
+  {
+    "command": "grep -inr 'storefront_footer' ./*"
+  },
+  {
+    "command": "cd /home/joseph/tld_domain5_dev/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -r ./vendor-digest/ /usr/share/projects/tld_domain5/wp-content/plugins/"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/wp-content/plugins/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cd tld_domain5_dev/vendor-digest/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "cd ../vendor-smscontacts/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "cp vendor-smscontacts.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-smscontacts/"
+  },
+  {
+    "command": "cd ../vendor-digest/"
+  },
+  {
+    "command": "cp vendor-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cp vendor-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "cd ../vendor-import/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-import-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cp vendor-import.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cp vendor-import-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cd ../vendor-digest/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "cd ../vendor-import/"
+  },
+  {
+    "command": "cp vendor-import-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cd tld_domain5_dev/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-import/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-import.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cp vendor-import-help.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cp vendor-import-help.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cp vendor-import-help.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-import/"
+  },
+  {
+    "command": "cd ../vendor-customize/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-customize.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-customize/"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less error_domain9.log"
+  },
+  {
+    "command": "tail -f error_domain9.log"
+  },
+  {
+    "command": "less error_domain9.log"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "htop"
+  },
+  {
+    "command": "apt-get install htop"
+  },
+  {
+    "command": "htop"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp tld_domain5.conf tld_domain11.conf"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano tld_domain11.conf "
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "a2ensite "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "cd ../sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ../sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "cd ../sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less error_domain9.log"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "service apache reload"
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "systemctl status apache"
+  },
+  {
+    "command": "systemctl status httpd"
+  },
+  {
+    "command": "ps aux | grep apache"
+  },
+  {
+    "command": "systemctl start apache2"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "cd ../sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "less /var/log/mail.err "
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ps aux"
+  },
+  {
+    "command": "systemctl status apache2"
+  },
+  {
+    "command": "systemctl status httpd"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "serivce apache2 reload"
+  },
+  {
+    "command": "systemctl reload apache"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-content/themes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5_dev/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd themes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -r ./vendor/ /usr/share/projects/tld_domain5/wp-content/themes/"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/wp-content/themes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data -R ./vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5_dev/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-digest/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-digest.php /usr/share/projects/tld_domain5/wp-content/plugins/vendor-digest/"
+  },
+  {
+    "command": "cat /etc/apache2/sites-available/tld_domain5.conf "
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command": "mysql"
+  },
+  {
+    "command": "exity"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command":"python3 ./coins-get.py 'https://domain4_tld/coin/germany-2-euro-cent-2012/?cid=15408&vid=14'"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data coin.log "
+  },
+  {
+    "command": "chown www-data:www-data bones.log "
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "chown joseph:joseph -R ./tld_domain3/"
+  },
+  {
+    "command": "cd com_tehnesis_"
+  },
+  {
+    "command": "cd tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command":"python3 ./coins-get.py 'https://domain4_tld/coin/germany-2-euro-cent-2012/?cid=15408'"
+  },
+  {
+    "command": "python3 ./coins-get.py 'https://domain4_tld/coin/germany-2-euro-cent-2012/?cid=15408'"
+  },
+  {
+    "command": "wget https://domain4_tld/coin/germany-2-euro-cent-2012/?cid=15408"
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command":"python3 ./coins-get.py 'https://domain4_tld/coin/germany-2-euro-cent-2012/?cid=15408&vid=14'"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/apache2/error_domain9.log"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd tld_domain3/"
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less coin.log "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less web.config "
+  },
+  {
+    "command": "cd /home/backup/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f ./coin.log "
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /usr/share/projects/tld_domain3/coin.log "
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less coin.log "
+  },
+  {
+    "command": "python3 ./coins-get.py 'https://domain4_tld/coin/israel-1-2-new-sheqel-2012/?cid=15471'"
+  },
+  {
+    "command": "wget 'https://domain4_tld/coin/israel-1-2-new-sheqel-2012/?cid=15471'"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat .htaccess "
+  },
+  {
+    "command": "cp .htaccess .htaccess-old20240301"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "cat .htaccess"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "cat .htaccess"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "systemctl reload apache2"
+  },
+  {
+    "command": "cd wp-content/plugins/vendor-customize"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/joseph/tld_domain5_dev/vendor-customize/vendor-customize.php ./"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes/storefront/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/joseph/tld_domain5_dev/themes/storefront/header.php ./"
+  },
+  {
+    "command": "cd /home/clouddisk/backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less server_backup.sh "
+  },
+  {
+    "command": "cd /home/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /etc/apache2/sites-enabled/tld_domain12.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir domain14"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/apache2/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp tld_domain12.conf domain14.conf"
+  },
+  {
+    "command": "vi domain14.conf "
+  },
+  {
+    "command": "a2ensite"
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain14/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mysql"
+  },
+  {
+    "command": "mysql -uroot"
+  },
+  {
+    "command": "mysql -uroot -p"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf ./public_html/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi .htaccess"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp .htaccess /home/projects/vendorp/"
+  },
+  {
+    "command": "nslookup"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain14/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xvf domain14_tld_archive_20240301_2324.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd public_html/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -R ./* /home/projects/vendorp/"
+  },
+  {
+    "command": "mv -R ./* /home/projects/vendorp/"
+  },
+  {
+    "command": "man mv"
+  },
+  {
+    "command": "cp -R ./* /home/projects/vendorp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/projects/vendorp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi wp-config.php "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -r www-data:www-data ./vendorp/"
+  },
+  {
+    "command": "chown -R www-data:www-data ./vendorp/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain14/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd domain14/"
+  },
+  {
+    "command": "cp /home/joseph/vendorp/mailru-domainSfapmw1r3SYO7sOm.html ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm mailru-domainSfapmw1r3SYO7sOm.html "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nslookup"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "vi /etc/apache2/sites-enabled/vendorp.conf "
+  },
+  {
+    "command": "less /var/log/apache2/error_domain14.log "
+  },
+  {
+    "command": "vi wp-config.php "
+  },
+  {
+    "command": "less /var/log/apache2/error_domain14.log "
+  },
+  {
+    "command": "less /var/log/apache2/access_domain14.log "
+  },
+  {
+    "command": "less .htaccess"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/apache2/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less tld_domain7.conf "
+  },
+  {
+    "command": "certbot --apache"
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "vi domain14.conf "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi server_backup.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "date"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm site_backup_domain4_tld_www_20220827_0111.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tail -f /usr/share/projects/tld_domain3/coin.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "curl https://domain4_tld/coin/portugal-1-euro-cent-2017/?cid=69004"
+  },
+  {
+    "command": "tail -f /usr/share/projects/tld_domain3/bones.log "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm btmp.1 "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/lib/mysql"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd clouddisk/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cloud-disk --?"
+  },
+  {
+    "command": "cloud-disk --help"
+  },
+  {
+    "command": "cloud-disk --exclude-dirs=Backup_from_spb_VMs"
+  },
+  {
+    "command": "cloud-disk --version"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cloud-disk --help"
+  },
+  {
+    "command": "vi ~/.config/cloud-disk/config.cfg"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cloud-disk stop"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "rm -rf Backup_from_spb_VMs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi ~/.config/cloud-disk/config.cfg"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cloud-disk start"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd joseph/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd domain14/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd clouddisk/"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf domain14/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf wp-mail-smtp-pro/"
+  },
+  {
+    "command": "rm wp-mail-smtp-pro*"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf lp_202*"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf domain9_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm mod-pagespeed-stable_current_amd64.deb "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf pulsar_key/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf tld_domain13/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mysql"
+  },
+  {
+    "command": "sudo mysql"
+  },
+  {
+    "command": "mysql -u root"
+  },
+  {
+    "command": "mysql -u root -p"
+  },
+  {
+    "command": "less /home/clouddisk/backup_from_prod-2/server_backup.sh "
+  },
+  {
+    "command": "mysqldump -u root -p tlddomain5 > tlddomain5_db_backup_20240307_2333.bak"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm tlddomain5_db_backup_20240307_2333.bak "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /home/clouddisk/backup_from_prod-2/server_backup.sh "
+  },
+  {
+    "command": "tar cvf domain5_site_20240307_2335.tar.gz ./domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain5"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "rm -rf ./domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm domain5_site_20240307_2335.tar.gz "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd tld_domain5"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm domain9_20240202.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf vendor-import_v2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm get-price.log "
+  },
+  {
+    "command": "rm get-weather.py "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd price/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "rm -rf ./price/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd projects/"
+  },
+  {
+    "command": "kk"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less server_backup.sh "
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd ai1wm-backups/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm domain8_tld-2020*"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd up"
+  },
+  {
+    "command": "cd uploads/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd tld_domain9/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd uploads/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "a2dissite "
+  },
+  {
+    "command": "service apache2 reload"
+  },
+  {
+    "command": "cd /etc/apache2/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less domain9.conf "
+  },
+  {
+    "command": "rm domain9.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "a2dissite "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm tld_domain13.conf "
+  },
+  {
+    "command": "rm domain4_tld_www.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf tld_domain9/"
+  },
+  {
+    "command": "rm -rf tld_domain13/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf domain4_tld_www/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "nano server_backup.sh "
+  },
+  {
+    "command": "vi server_backup.sh "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd maria/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /etc/group"
+  },
+  {
+    "command": "userdel maria"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf maria/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "userdel pulsar"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd pulsar/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi tld_domain5.conf "
+  },
+  {
+    "command": "vi tld_domain11.conf "
+  },
+  {
+    "command": "cd /home/p"
+  },
+  {
+    "command": "cd /home/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd pulsar/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp site_backup_tld_domain4_20240307_0101.tar.gz /usr/share/projects/"
+  },
+  {
+    "command": "tar -xvf site_backup_tld_domain4_20240307_0101.tar.gz -C /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf ./usr/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/clouddisk/backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "tar xvf site_backup_tld_domain4_20240307_0101.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -R ./* /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/clouddisk/backup_from_prod-2/usr/share/projects/tld_domain5/.htaccess ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat .htaccess "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R www-data:www-data ./tld_domain5/"
+  },
+  {
+    "command": "rm site_backup_tld_domain4_20240307_0101.tar.gz "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown root:root .htaccess "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd /home/clouddisk/backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm -rf ./usr/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/clouddisk/backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd /home/joseph/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/clouddisk/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd backup_from_prod-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /etc/hosts"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /usr/share/projects/tld_domain3/coin.log "
+  },
+  {
+    "command": "cd "
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain3/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat get-coin-price.php"
+  },
+  {
+    "command": "tail -f coin.log "
+  },
+  {
+    "command": "python3 ./coins-get.py 'https://domain4_tld/coin/portugal-2-euro-2018/?tid=77746'"
+  },
+  {
+    "command": "wget https://domain4_tld/coin/portugal-2-euro-2018/?tid=77746"
+  },
+  {
+    "command": "cd /usr/share/projects/tld_domain5/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-content/plugins/woocommerce"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cp -R ./templates/* /home/joseph/tld_domain5_dev/woocommerce_templates/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd wc-fields-factory/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd assets/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd css/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cp -R ./wc-fields-factory/* /home/joseph/tld_domain5_dev/wc-fields-factory/"
+  },
+  {
+    "command": "telnet mx.gmail.com 25"
+  },
+  {
+    "command": "service apache status"
+  },
+  {
+    "command": "service apache2 status"
+  },
+  {
+    "command": "telnet mx.outlook.com 25"
+  },
+  {
+    "command": "netstat -tulpn"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "history > history.txt"
+  }
+]
