@@ -6,11 +6,12 @@ def init_list_of_objects(size):
     for i in range(0,size):
         list_of_objects.append( list() ) #different object reference each time
     return list_of_objects
-
+#====def init_list_of_objects(size)
 
 def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
   cmd_for_analyze = str(cmd)
-  print(f"======\nCommand for analyze: {cmd_for_analyze}")
+  if debug:
+    print(f"======\nCommand for analyze: {cmd_for_analyze}")
 
   D = 0
 
@@ -20,14 +21,11 @@ def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
 
     ME = 0
     MP = 0
-
     S = 0
     F = 1
 
-    #print(mat)
     for mat_cmd in mat:
       cmd_to_compare = mat_cmd["command"]
-      #print("compare with: " + cmd_to_compare)
 
       cmd_conjuct = 0
 
@@ -48,8 +46,6 @@ def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
 
       if cmd_conjuct == 1:
         if not cmd_to_compare in _A[i-1]:
-          #_A[i-1].index(cmd_to_compare)
-          #_A[i-1].append(cmd_for_analyze)
           _A[i-1].append(cmd_to_compare)
 
     if len(_A[i-1])>0:
@@ -59,7 +55,9 @@ def calculate_d_command(cmd, _MAT, _A, _MATnames, debug = 0):
       F = 2
 
     D = D + (ME + MP)*S*F
-  print(f"D(cmd) = {D}")
+  
+  if debug:
+    print(f"D(cmd) = {D}")
 
   return D
 #=======def calculate_d_command()
@@ -94,6 +92,8 @@ with open('commands1.json', 'r') as commands1_file:
 commands1_objects = json.loads(commands1_data)
 print(f"Commands #1 list number of commands = {len(commands1_objects)}")
 
+#making analyze for commands in Commands list #1
 for cmd1 in commands1_objects:
-  Dcmd = calculate_d_command(cmd1["command"], _MAT, _A, _MATnames, 1)
-  print(f"Dcmd = {Dcmd}")
+  cmd = cmd1["command"]
+  Dcmd = calculate_d_command(cmd, _MAT, _A, _MATnames, 0)
+  print(f"cmd={cmd}, Dcmd={Dcmd}")
