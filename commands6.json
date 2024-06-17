@@ -1,0 +1,2279 @@
+[
+  {
+    "command": "cp due-emails.sh ./send-notifications.sh"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano send-notifications.sh "
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": ";;"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/err"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /home/projects/domain_tld/wp-content/plugins/vendor-product/vendor-notify-run.php "
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../uploads/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-email-logo.png  /home/projects/domain_tld/wp-content/uploads/"
+  },
+  {
+    "command": "cd ../vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'PAYONLINE' | less"
+  },
+  {
+    "command": "grep -inr 'payonline-payment-result' /home/projects/domain_tld/wp-content/plugins/"
+  },
+  {
+    "command": "grep -inr 'payonline-payment-result' /home/projects/domain_tld/wp-content/"
+  },
+  {
+    "command": "grep -inr 'payonline-payment-result' /home/projects/domain_tld/wp-content/themes/"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'PAYONLINE' | less"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'PAYONLINE' | tailf"
+  },
+  {
+    "command": "tailf | cat /var/log/apache2/error.log | grep 'PAYONLINE' "
+  },
+  {
+    "command": "tail -f | cat /var/log/apache2/error.log | grep 'PAYONLINE' "
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'PAYONLINE' | less"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp error.log.8.gz /home/ubuntu/"
+  },
+  {
+    "command": "cp error.log.7.gz /home/ubuntu/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat send-notifications.sh "
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "time"
+  },
+  {
+    "command": "date"
+  },
+  {
+    "command": "man date"
+  },
+  {
+    "command": "date"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/mail/root "
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp tick-green.png /home/projects/domain_tld/img/"
+  },
+  {
+    "command": "cd ../vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'Subscribe' | less"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log.1 | grep 'Subscribe' | less"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log.1 | grep 'Subscribe' | grep 'domain2'"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp functions.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll vendor-admin.php"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "q"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "./send-notifications.sh "
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'Notify-run' | less"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/plugins/woocommerce"
+  },
+  {
+    "command": "grep -inr 'wp_editor(' ./*"
+  },
+  {
+    "command": "less ./includes/admin/meta-boxes/class-wc-meta-box-product-short-description.php"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/plugins/woocommerce"
+  },
+  {
+    "command": "less ./includes/admin/meta-boxes/class-wc-meta-box-product-short-description.php"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/plugins/woocommerce"
+  },
+  {
+    "command": "less ./includes/admin/meta-boxes/class-wc-meta-box-product-short-description.php"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/auto/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano send-notifications.sh "
+  },
+  {
+    "command": "crontab -l"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "nano /home/auto/send-notifications.sh "
+  },
+  {
+    "command": "crontab -e"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify-run.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-notify.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd /home/backup/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "cd /home/store/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/store/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat server_backup.sh "
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp student-config.php  /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/projects/domain_tld/wp-content/themes/vendor/templates/list-item-event.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp list-item-event.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "ll  /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cp /home/projects/domain_tld/wp-content/themes/vendor/templates/list-item-program.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp list-item-program.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "q"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp style.css /home/projects/domain_tld/wp-content/themes/vendor/style.css "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/ubuntu/vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cp style.css /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "cp product2_archive.png /home/projects/domain_tld/img/"
+  },
+  {
+    "command": "cp private_law_archive.png /home/projects/domain_tld/img/"
+  },
+  {
+    "command": "cd ../themes_vendor/"
+  },
+  {
+    "command": "lll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir wp-admin"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-admin/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-admin/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp -r ./* /home/ubuntu/vendor_v46/wp-admin/"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/"
+  },
+  {
+    "command": "cd wp-admin/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp product2_archive_2.png /home/projects/domain_tld/img/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R ubuntu:ubuntu ./wp-admin/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wp-admin/"
+  },
+  {
+    "command": "cd css/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp edit-rtl.css /home/projects/domain_tld/wp-admin/css/"
+  },
+  {
+    "command": "cp edit-rtl.min.css /home/projects/domain_tld/wp-admin/css/"
+  },
+  {
+    "command": "cd ../.."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp list-item-program.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp style.css /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-admin/css/edit-rtl.*"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../themes_vendor/"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/"
+  },
+  {
+    "command": "grep -inr '>price<' ./*"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/themes_vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp list-item-event.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cat /var/log/apache2/error.log | grep 'smbd@gmail.com'"
+  },
+  {
+    "command": "cat /var/log/apache2/access.log | grep 'smbd@gmail.com'"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp Template.xls /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat .htaccess "
+  },
+  {
+    "command": "cat robots.txt "
+  },
+  {
+    "command": "nano robots.txt "
+  },
+  {
+    "command": "cp robots.txt /home/ubuntu/vendor_v46/"
+  },
+  {
+    "command": "cd wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm Template.xls "
+  },
+  {
+    "command": "дд"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp template_for_upload_questions_with_answers.xls /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp taxonomy-domain_program_section.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/"
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "cp list-item-program.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp single-domain_* /home/ubuntu/vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/themes_vendor/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp single-domain_publication.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp files.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../themes_vendor/"
+  },
+  {
+    "command": "cp single-domain_publication.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd ../vendor-product/"
+  },
+  {
+    "command": "cp files.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../themes_vendor/"
+  },
+  {
+    "command": "cp single-domain_publication.php /home/projects/domain_tld/wp-content/themes/vendor/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd img/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp eco.png /home/projects/domain_tld/img/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp content-event-preregistration.php /home/ubuntu/vendor_v46/themes_vendor/templates/"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/themes_vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp content-event-preregistration.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp registration-form-corporate.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration-validate.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp export_info_sources.php /home/ubuntu/vendor_v46/registrations/"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/registrations/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp export_info_sources.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cd ../"
+  },
+  {
+    "command": "cd vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp registration-form-corporate.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration-validate.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp registration-preview.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cp vendor-registration-validate.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "cp registration-form-corporate.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor_v46/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd payonline/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp payonline.php /home/projects/domain_tld/wp-content/plugins/payonline/payonline.php "
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registrations-list.php /home/ubuntu/vendor_v46/vendor/classes/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/registrations/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd vendor"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/projects/domain_tld/wp-content/plugins/vendor/vendor.php ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor.php /home/projects/domain_tld/wp-content/plugins/vendor/"
+  },
+  {
+    "command": "cd ../registrations/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cd ../vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../../registrations/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp show_account_pdf.php /home/projects/domain_tld/registrations/"
+  },
+  {
+    "command": "cd ../vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp mail-member.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "tail -f /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd vendor_v46/uploads/2021_05/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /home/projects/domain_tld/wp-content/uploads/2021/05/poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf "
+  },
+  {
+    "command": "cp /home/projects/domain_tld/wp-content/uploads/2021/05/poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf ./"
+  },
+  {
+    "command": "cp poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf /home/projects/domain_tld/wp-content/uploads/2021/05/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log"
+  },
+  {
+    "command": "cat /var/log/apache2/access.log | grep 'coursemarks' | tail -f"
+  },
+  {
+    "command": "tail -f | cat /var/log/apache2/access.log | grep 'coursemarks'"
+  },
+  {
+    "command": "tailf "
+  },
+  {
+    "command": "tail --help"
+  },
+  {
+    "command": "cat /var/log/apache2/access.log | grep 'coursemarks' | less"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-surveys.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-surveys.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-surveys.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "zcat access.log.2.gz | less"
+  },
+  {
+    "command": "zcat access.log.2.gz | grep '07:32' | less"
+  },
+  {
+    "command": "cd /home/ubuntu/vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp registration-complete.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "cp registration-complete.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "cp registration-complete.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../classes/"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd themes_vendor/templates/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd vendor_v46/vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cp vendor-registration-validate.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "cp registration-preview.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cp registration-form-corporate.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "ufw status"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-surveys.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "screen"
+  },
+  {
+    "command": "cd /home/store/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/"
+  },
+  {
+    "command": "du"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd /var/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd lo"
+  },
+  {
+    "command": "cd log/"
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd journal/"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd 0e80c99629aa4c5ba801ff6f375fd5fe/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm 'system@369a80c732e3406aa13bbab3ddf4bd4b-0000000000*"
+  },
+  {
+    "command": "rm 'system@369a80c732e3406aa13bbab3ddf4bd4b-0000000000*"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ls -l"
+  },
+  {
+    "command": "rm system@369a80c732e3406aa13bbab3ddf4bd4b-0000000000*"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "du -h --max-depth=1 | sort -hr"
+  },
+  {
+    "command": "cd ../lib/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd mysql"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm binlog.0673*"
+  },
+  {
+    "command": "rm binlog.0674*"
+  },
+  {
+    "command": "rm binlog.0675*"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "rm binlog.06760*"
+  },
+  {
+    "command": "rm binlog.06761*"
+  },
+  {
+    "command": "rm binlog.06762*"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "fdisk /dev/vda"
+  },
+  {
+    "command": "fdisk -l /dev/vda"
+  },
+  {
+    "command": "cd /"
+  },
+  {
+    "command": "cd ~"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cfdisk "
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "resize2fs /dev/vda1"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd vendor_v46/vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd /var/log/apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less error.log"
+  },
+  {
+    "command": "cat error.log | grep 'files.php' | less"
+  },
+  {
+    "command": "cat access.log | grep 'files.php' | less"
+  },
+  {
+    "command": "cat error.log | grep '22/Jan/2024:10:' | less"
+  },
+  {
+    "command": "less error.log"
+  },
+  {
+    "command": "cat error.log | grep 'Jan 22 10:' | less"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cd ../themes_vendor/templates/"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp calendar.php /home/projects/domain_tld/wp-content/themes/vendor/templates/"
+  },
+  {
+    "command": "cd ../../vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../templates/"
+  },
+  {
+    "command": "cp registration-complete.php /home/projects/domain_tld/wp-content/plugins/vendor/templates/"
+  },
+  {
+    "command": "cd ../.."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/apache2/access.log"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "less /var/log/mysql/error.log"
+  },
+  {
+    "command": "cd /var/log/mysql/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "less syslog"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less auth.log"
+  },
+  {
+    "command": "less lastlog "
+  },
+  {
+    "command": "cd apache2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less access.log"
+  },
+  {
+    "command": "cat access.log | grep '/my-account/' | less"
+  },
+  {
+    "command": "less error.log"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "less /var/log/apache2/error.log"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/wp-content/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd uploads/2021/05/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf "
+  },
+  {
+    "command": "cp poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf-old20240213"
+  },
+  {
+    "command": "cp poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf-old20240213"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy*"
+  },
+  {
+    "command": "cp ../../2024/02/poryadok-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-vendor_2020.pdf poryadok-organizaczii-promezhutochnoj-i-itogovoj-attestaczii-slushatelej-dpp-i-ee-formy.pdf"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin-actions.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/domain-video/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp player-2.html /home/projects/domain_tld/wp-content/plugins/domain-video/"
+  },
+  {
+    "command": "cp videoview2.php /home/projects/domain_tld/wp-content/plugins/domain-video/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd domain-video/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp videoview2.php /home/projects/domain_tld/wp-content/plugins/domain-video/"
+  },
+  {
+    "command": "cp player-2.html /home/projects/domain_tld/wp-content/plugins/domain-video/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd /home/projects/domain_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir .well-known"
+  },
+  {
+    "command": "cd .well-known/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir acme-challenge"
+  },
+  {
+    "command": "cd acme-challenge/"
+  },
+  {
+    "command": "echo 'zgJwe5pUytNmnhWy4SHgLFubIZF3NEa2_PjDdf7g8mU._xdxrT_BTWSUPuIVwPs-6aEUmRygfRR7oadTJ9z-jQs' > zgJwe5pUytNmnhWy4SHgLFubIZF3NEa2_PjDdf7g8mU"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd vendor_v46/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-admin.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../vendor/classes/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-registration.php /home/projects/domain_tld/wp-content/plugins/vendor/classes/"
+  },
+  {
+    "command": "cd ../../"
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "cd ../themes_vendor/woocommerce_emails/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/projects/domain_tld/wp-content/themes/vendor/woocommerce/emails/* ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp customer-new-account.php /home/projects/domain_tld/wp-content/themes/vendor/woocommerce/emails/"
+  },
+  {
+    "command": "cp customer-completed-order.php /home/projects/domain_tld/wp-content/themes/vendor/woocommerce/emails/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp customer-processing-order.php /home/projects/domain_tld/wp-content/themes/vendor/woocommerce/emails/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp customer-reset-password.php /home/projects/domain_tld/wp-content/themes/vendor/woocommerce/emails/"
+  },
+  {
+    "command": "cd ../.."
+  },
+  {
+    "command": "cd vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp vendor-product.php /home/projects/domain_tld/wp-content/plugins/vendor-product/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "cd /home/store/"
+  },
+  {
+    "command": "ll"
+  }
+]
