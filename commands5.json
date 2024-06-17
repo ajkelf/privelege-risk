@@ -1,0 +1,1805 @@
+[
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "curl https://download.jitsi.org/jitsi-key.gpg.key | sudo sh -c 'gpg --dearmor > /usr/share/keyrings/jitsi-keyring.gpg'"
+  },
+  {
+    "command": "echo 'deb [signed-by=/usr/share/keyrings/jitsi-keyring.gpg] https://download.jitsi.org stable/' | sudo tee /etc/apt/sources.list.d/jitsi-stable.list > /dev/null"
+  },
+  {
+    "command": "sudo apt-get -y update"
+  },
+  {
+    "command": "sudo apt-get -y install jitsi-meet"
+  },
+  {
+    "command": "ufw status verbose"
+  },
+  {
+    "command": "ufw allow 80/tcp"
+  },
+  {
+    "command": "ufw allow 443/tcp"
+  },
+  {
+    "command": "ufw allow 10000/udp"
+  },
+  {
+    "command": "ufw allow 22/tcp"
+  },
+  {
+    "command": "ufw allow 3478/udp"
+  },
+  {
+    "command": "ufw allow 5349/tcp"
+  },
+  {
+    "command": "ufw enable"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "cd /etc/nginx/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir domain1"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ln -s /home/dlcfadmin/jitsi-meet-2 jitsi-meet"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ln -s /home/dlcfadmin/domain1-2/certs/ certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ln -s /home/dlcfadmin/domain1-2/certs certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir config"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ln -s /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld_config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /etc/prosody/certs/"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /etc/prosody/conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less conf.domain1_tld.cfg.lua "
+  },
+  {
+    "command": "cp conf.domain1_tld.cfg.lua /home/dlcfadmin/domain1-2/config-example/"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R www-data:www-data domain1-2/"
+  },
+  {
+    "command": "chown -R www-data:www-data jitsi-meet-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "certbot"
+  },
+  {
+    "command": "apt  install certbot"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R www-data:www-data ./certs"
+  },
+  {
+    "command": "chown -R www-data:www-data ./jitsi-meet"
+  },
+  {
+    "command": "chown -R www-data:www-data ./config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/nginx/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano conf.domain1_tld.conf "
+  },
+  {
+    "command": "less conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd /home/domain1/certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/nginx/sites-available"
+  },
+  {
+    "command": "nano conf.domain1_tld.conf n"
+  },
+  {
+    "command": "nano conf.domain1_tld.conf"
+  },
+  {
+    "command": "systemctl restart nginx"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "less conf.domain1_tld.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/nginx/error.log "
+  },
+  {
+    "command": "cd /home/dlcfadmin/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd jitsi-meet-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "pwd"
+  },
+  {
+    "command": "cd /etc/nginx/sites-available/"
+  },
+  {
+    "command": "nano conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm jitsi-meet"
+  },
+  {
+    "command": "rm certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir certs"
+  },
+  {
+    "command": "mkdir jitsi-meet"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd jitsi-meet/"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "sudo apt install curl && sudo apt install make"
+  },
+  {
+    "command": "curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -"
+  },
+  {
+    "command": "apt install -y nodejs"
+  },
+  {
+    "command": "node -v && npm -v"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld_config.js config.js"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R www-data:www-data ./certs/"
+  },
+  {
+    "command": "chown -R www-data:www-data ./config/"
+  },
+  {
+    "command": "chown -R www-data:www-data ./jitsi-meet/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/nginx/sites-available/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano conf.domain1_tld.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "less /var/log/nginx/error.log "
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/letsencrypt/live/conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp * /home/dlcfadmin/domain1-2/certs/conf.domain1_tld/"
+  },
+  {
+    "command": "cd /home/dlcfadmin/domain1-2/certs/conf.domain1_tld/"
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "nano /etc/nginx/sites-available/conf.domain1_tld.conf "
+  },
+  {
+    "command": "n"
+  },
+  {
+    "command": "systemctl restart nginx"
+  },
+  {
+    "command": "cd /etc/prosody/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "prosodyctl adduser user1@conf.domain1_tld"
+  },
+  {
+    "command": "prosodyctl adduser user1"
+  },
+  {
+    "command": "prosodyctl adduser user1@conf.domain1_tld"
+  },
+  {
+    "command": "less /var/log/prosody/prosody.err "
+  },
+  {
+    "command": "less /var/log/prosody/prosody.log "
+  },
+  {
+    "command": "prosodyctl "
+  },
+  {
+    "command": "prosodyctl check"
+  },
+  {
+    "command": "ip a"
+  },
+  {
+    "command": "less /var/log/jitsi/jvb.log "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd jitsi/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd videobridge/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano jvb.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano config "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd jicofo/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano jicofo.conf "
+  },
+  {
+    "command": "n"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd meet/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano conf.domain1_tld-config.js "
+  },
+  {
+    "command": "cd /etc/nginx/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd jitsi-meet/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ."
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/nginx/error.log "
+  },
+  {
+    "command": "systemctl restart nginx"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/nginx/error.log "
+  },
+  {
+    "command": "tail -f  /var/log/nginx/error.log "
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano config.js "
+  },
+  {
+    "command": "prosodyctl adduser user1@conf.domain1_tld"
+  },
+  {
+    "command": "prosodyctl register user1 conf.domain1_tld MRq5H1oq22apeGBgGOIy"
+  },
+  {
+    "command": "prosodyctl register user1@conf.domain1_tld MRq5H1oq22apeGBgGOIy"
+  },
+  {
+    "command": "less /var/log/prosody/prosody.err "
+  },
+  {
+    "command": "systemctl reload prosody"
+  },
+  {
+    "command": "systemctl restart prosody"
+  },
+  {
+    "command": "prosodyctl register user1@conf.domain1_tld MRq5H1oq22apeGBgGOIy"
+  },
+  {
+    "command": "prosodyctl register user1 conf.domain1_tld MRq5H1oq22apeGBgGOIy"
+  },
+  {
+    "command": "cd /etc/prosody/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano prosody.cfg.lua "
+  },
+  {
+    "command": "nano conf.d/conf.domain1_tld.cfg.lua "
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld.cfg.lua ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less conf-domain1-tld.cfg.lua "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm conf.domain1_tld.cfg.lua "
+  },
+  {
+    "command": "ln -s ../conf.avail/conf-domain1-tld.cfg.lua conf-domain1-tld.cfg.lua"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl restart prosody"
+  },
+  {
+    "command": "cd /home/domain1/config/"
+  },
+  {
+    "command": "nano config.js "
+  },
+  {
+    "command": "prosodyctl adduser user1@conf.domain1_tld"
+  },
+  {
+    "command": "nano config.js "
+  },
+  {
+    "command": "systemctl restart nginx"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm conf-domain1-tld_config.js "
+  },
+  {
+    "command": "ln -s /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld_config.js config.js"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown -R www-data:www-data"
+  },
+  {
+    "command": "chown -R www-data:www-data config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd certs/test.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "df -h"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "less /var/log/jitsi/jvb.log "
+  },
+  {
+    "command": "less /var/log/jitsi/jicofo.log"
+  },
+  {
+    "command": "less /var/log/nginx/error.log"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "prosodyctl --?"
+  },
+  {
+    "command": "prosodyctl --help"
+  },
+  {
+    "command": "prosodyctl about"
+  },
+  {
+    "command": "cd /etc/pro"
+  },
+  {
+    "command": "cd /etc/prosody/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less conf-domain1-tld.cfg.lua "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less localhost.cfg.lua "
+  },
+  {
+    "command": "mkdir wb"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd wb/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir whiteboard"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "mkdir certs"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data -R ./whiteboard/"
+  },
+  {
+    "command": "chown www-data:www-data -R ./certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/dlcfadmin/excalidraw-backend/dist/* ./whiteboard/"
+  },
+  {
+    "command": "cd whiteboard/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "chown www-data:www-data -R ./whiteboard/"
+  },
+  {
+    "command": "cd whiteboard/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "certbot -?"
+  },
+  {
+    "command": "certbot --help"
+  },
+  {
+    "command": "certbot "
+  },
+  {
+    "command": "certbot certonly"
+  },
+  {
+    "command": "certbot certonly -d wb.domain1_tld"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "cp /etc/letsencrypt/live/wb.domain1_tld/fullchain.pem ./"
+  },
+  {
+    "command": "cp /etc/letsencrypt/live/wb.domain1_tld/privkey.pem ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "vi /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd dlcfadmin/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "nano /etc/nginx/sites-available/wb.domain1_tld.conf"
+  },
+  {
+    "command": "cd /etc/nginx/sites-enabled/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ln -s /etc/nginx/sites-available/wb.domain1_tld.conf wb.domain1_tld.conf"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "service nginx reload"
+  },
+  {
+    "command": "nano /etc/nginx/sites-available/wb.domain1_tld.conf"
+  },
+  {
+    "command": "service nginx reload"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cp excalidraw.service /etc/systemd/system/"
+  },
+  {
+    "command": "systemctl enable excalidraw.service"
+  },
+  {
+    "command": "systemctl start excalidraw.service"
+  },
+  {
+    "command": "systemctl status excalidraw.service"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "npm start"
+  },
+  {
+    "command": "DEBUG=* npm start"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "echo 'PORT=3002' >.env.production"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "DEBUG=* npm start"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "systemctl disable excalidraw.service"
+  },
+  {
+    "command": "cd  /etc/systemd/system/excalidraw.service "
+  },
+  {
+    "command": "nano /etc/systemd/system/excalidraw.service "
+  },
+  {
+    "command": "systemctl enable excalidraw.service"
+  },
+  {
+    "command": "systemctl start excalidraw.service"
+  },
+  {
+    "command": "systemctl status excalidraw.service"
+  },
+  {
+    "command": "netstat -nvp"
+  },
+  {
+    "command": "apt install net-tools"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld_config.js /home/domain1/config/"
+  },
+  {
+    "command": "cd /home/domain1/config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld_config.js config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /var/log/prosody/prosody.err"
+  },
+  {
+    "command": "less /var/log/prosody/prosody.log"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld_config.js /home/domain1/config/"
+  },
+  {
+    "command": "cd /home/domain1/config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "chown www-data:www-data conf-domain1-tld_config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp config.js config_js_old20230312"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld_config.js config.js "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/prosody/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "rm conf.domain1_tld.cfg.lua "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd ../conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/nginx/sites-available/wb.domain1_tld.conf "
+  },
+  {
+    "command": "nano /etc/nginx/sites-available/wb.domain1_tld.conf "
+  },
+  {
+    "command": "nano /etc/nginx/sites-available/conf.domain1_tld.conf "
+  },
+  {
+    "command": "service nginx reload"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "less /var/log/lastlog "
+  },
+  {
+    "command": "less /var/log/dmesg"
+  },
+  {
+    "command": "top"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "history | grep certbot"
+  },
+  {
+    "command": "certbot certonly -d conf.domain1_tld"
+  },
+  {
+    "command": "cat /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "history | grep certbot"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "certbot certonly -d conf.domain1_tld"
+  },
+  {
+    "command": "cd /etc/letsencrypt/live/conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp *.pem /home/dlcfadmin/domain1-2/certs/conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/dlcfadmin/domain1-2/certs/conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp *.pem /home/domain1/certs/"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "git add ."
+  },
+  {
+    "command": "git commit"
+  },
+  {
+    "command": "git push"
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "reboot"
+  },
+  {
+    "command": "less /var/log/syslog"
+  },
+  {
+    "command": "journalctl -xe"
+  },
+  {
+    "command": "less /etc/jitsi/videobridge/jvb.conf "
+  },
+  {
+    "command": "less /etc/jitsi/videobridge/logging.properties "
+  },
+  {
+    "command": "less /etc/jitsi/videobridge/config "
+  },
+  {
+    "command": "less /var/log/jitsi/"
+  },
+  {
+    "command": "less /var/log/jitsi/jvb.log"
+  },
+  {
+    "command": "cat /etc/jitsi/videobridge/jvb.conf "
+  },
+  {
+    "command": "vi /etc/jitsi/videobridge/jvb.conf "
+  },
+  {
+    "command": "history | grep videob"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "journalctl -xe"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /etc/prosody/conf.avail/conf-domain1-tld.cfg.lua "
+  },
+  {
+    "command": "cd /etc/prosody/conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat example.com.cfg.lua "
+  },
+  {
+    "command": "rm example.com.cfg.lua "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat jaas.cfg.lua "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat localhost.cfg.lua "
+  },
+  {
+    "command": "cd /etc/jitsi/jicofo/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat jicofo.conf "
+  },
+  {
+    "command": "cat config "
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "git pull"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp jicofo.conf /etc/jitsi/jicofo/jicofo.conf "
+  },
+  {
+    "command": "prosodyctl register user1 conf.domain1_tld MRq5H1oq22apeGBgGOIy"
+  },
+  {
+    "command": "systemctl restart prosody"
+  },
+  {
+    "command": "systemctl restart jicofo"
+  },
+  {
+    "command": "systemctl restart jitsi-videobridge2"
+  },
+  {
+    "command": "prosodyctl register user2 conf.domain1_tld lgermy"
+  },
+  {
+    "command": "prosodyctl register user3 conf.domain1_tld DJteYeaPINc4nbJ58Ka1"
+  },
+  {
+    "command": "prosodyctl register vmixadmin conf.domain1_tld ZVmZOMe9bWyQaHxtCouS"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "l"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "git pull"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "cp conf-domain1-tld.cfg.lua /etc/prosody/conf.avail/conf-domain1-tld.cfg.lua "
+  },
+  {
+    "command": "history | grep prosody"
+  },
+  {
+    "command": "systemctl restart prosody"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "prosodyctl register user4 conf.domain1_tld "
+  },
+  {
+    "command": "prosodyctl register user5 conf.domain1_tld "
+  },
+  {
+    "command": "prosodyctl register user6 conf.domain1_tld "
+  },
+  {
+    "command": "prosodyctl register user7 conf.domain1_tld "
+  },
+  {
+    "command": "prosodyctl register user8 conf.domain1_tld "
+  },
+  {
+    "command": "prosodyctl register user9 conf.domain1_tld "
+  },
+  {
+    "command": "less /etc/prosody/conf.d/conf-domain1-tld.cfg.lua "
+  },
+  {
+    "command": "cd /var/log/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd jitsi/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less jvb.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less jicofo.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less jvb.log"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "git pull"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/jitsi/meet/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd videobridge/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd prosody/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.d/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd .."
+  },
+  {
+    "command": "cd conf.avail/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld.cfg.lua conf-domain1-tld.cfg.lua-old20230816"
+  },
+  {
+    "command": "cp /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld.cfg.lua ./"
+  },
+  {
+    "command": "systemctl restart prosody"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "git pull"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cat /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config-example/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd config/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp config.js config_js_old20230816"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /home/dlcfadmin/domain1-2/config-example/conf-domain1-tld_config.js ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp conf-domain1-tld_config.js config.js"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd /home/domain1/jitsi-meet/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd css/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano all.css "
+  },
+  {
+    "command": "vi all.css "
+  },
+  {
+    "command": "cd /home/domain1/jitsi-meet/"
+  },
+  {
+    "command": "cd css/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "grep -inr 'welcome-card-column' ./*"
+  },
+  {
+    "command": "grep -inr 'welcome-card-column'"
+  },
+  {
+    "command": "grep -inr 'flag'"
+  },
+  {
+    "command": "grep -inr 'welcome'"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp all.css all.css-old20230820"
+  },
+  {
+    "command": "cp /home/dlcfadmin/20230820-css/all.css ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "less /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "history | grep certbot"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "ll /etc/letsencrypt/live/conf.domain1_tld/"
+  },
+  {
+    "command": "cp /etc/letsencrypt/archive/conf.domain1_tld/*.pem ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp /etc/letsencrypt/live/conf.domain1_tld/*.pem ./"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "exit"
+  },
+  {
+    "command": "git commit ."
+  },
+  {
+    "command": "git push"
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "less /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp cert.pem /home/domain1/certs/"
+  },
+  {
+    "command": "cp chain.pem /home/domain1/certs/"
+  },
+  {
+    "command": "cp fullchain.pem /home/domain1/certs/"
+  },
+  {
+    "command": "cp privkey.pem /home/domain1/certs/"
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd domain1-2/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "ll /etc/letsencrypt/live/conf.domain1_tld/"
+  },
+  {
+    "command": "less /etc/nginx/sites-available/conf.domain1_tld.conf "
+  },
+  {
+    "command": "cd /home/domain1/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cd /etc/letsencrypt/live/conf.domain1_tld/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "cp * /home/domain1/certs/"
+  },
+  {
+    "command": "cd /home/domain1/certs/"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "nano /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "history | grep certbot"
+  },
+  {
+    "command": "certbot certonly --noninteractive --webroot --webroot-path /home/domain1/jitsi-meet -d conf.domain1_tld --agree-tos --email conf@domain1_tld"
+  },
+  {
+    "command": "less /etc/nginx/sites-enabled/conf.domain1_tld.conf "
+  },
+  {
+    "command": "systemctl reload nginx"
+  },
+  {
+    "command": "history"
+  },
+  {
+    "command": "ll"
+  },
+  {
+    "command": "history > history_conf.txt"
+  }
+]
